@@ -1,0 +1,156 @@
+@import "../../_globalColor";
+
+.detail-page {
+  min-height: 100vh;
+  background-color: $lightBackground1;
+
+  &.dark-mode {
+    background-color: $darkBackground;
+    color: $textColorDark;
+  }
+}
+
+.detail-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.detail-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.detail-back-bottom {
+  margin-top: 2rem;
+}
+
+.detail-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-chip {
+  border: 1px solid $lightBorder1;
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  color: $cardSubtitle;
+
+  .dark-mode & {
+    color: $textColorDark;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.detail-chip-role {
+  background-color: $headerHoverBG;
+  border-color: transparent;
+
+  .dark-mode & {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.detail-intro {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin: 1.5rem 0;
+}
+
+.detail-external-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: inherit;
+  font-weight: 600;
+}
+
+.detail-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 1.5rem 0;
+  background: #000;
+  border-radius: 6px;
+  overflow: hidden;
+
+  iframe,
+  video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.detail-section {
+  margin-top: 2.5rem;
+}
+
+.detail-section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.detail-section-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.detail-section-list {
+  padding-left: 1.25rem;
+
+  li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid $lightBorder1;
+    background: $lightBackground3;
+
+    .dark-mode & {
+      border-color: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-title {
+    font-size: 2.1rem;
+  }
+
+  .detail-container {
+    padding: 2rem 1rem 3rem;
+  }
+}

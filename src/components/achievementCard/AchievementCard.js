@@ -7,6 +7,11 @@ export default function AchievementCard({cardInfo, isDark}) {
       console.log(`URL for ${name} not found`);
       return;
     }
+    // In-app hash links (detail pages) navigate in the same tab
+    if (url.startsWith("#")) {
+      window.location.hash = url;
+      return;
+    }
     var win = window.open(url, "_blank");
     win.focus();
   }

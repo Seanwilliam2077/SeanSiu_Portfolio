@@ -9,6 +9,11 @@ export default function StartupProject() {
     if (!url) {
       return;
     }
+    // In-app hash links (detail pages) navigate in the same tab
+    if (url.startsWith("#")) {
+      window.location.hash = url;
+      return;
+    }
     var win = window.open(url, "_blank");
     win.focus();
   }

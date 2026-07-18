@@ -170,6 +170,10 @@ const bigProjects = {
         "3D ARPG built in Unreal by a team of 5 (solo programmer with 4 artists) in 2 months. I built the third-person combat system (dodge, parry, melee & magic), four enemy AI archetypes including the final boss, the item system and the full UI.",
       footerLink: [
         {
+          name: "Read More",
+          url: "#/project/wolf-soga"
+        },
+        {
           name: "Watch Video",
           url: "https://vimeo.com/1111774512"
         }
@@ -182,6 +186,10 @@ const bigProjects = {
       projectDesc:
         "A complete parkour system for ARPGs, built solo in Unreal in 2 months — slide, vault/mantle, beam walk, edge grab, cover, wall run & climb, dodge/sprint, plus enemy AI perception and branching NPC dialogue, assembled into a playable level.",
       footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/rpg-parkour-system"
+        },
         {
           name: "Watch Video",
           url: "https://vimeo.com/1110810152"
@@ -196,6 +204,10 @@ const bigProjects = {
         "My first game: a 3D ARPG in Unity set in a medieval fantasy castle, built solo in 3 months — 12 enemy types with distinct attack patterns in C#, level scripting, shortcut elevators and respawn design.",
       footerLink: [
         {
+          name: "Read More",
+          url: "#/project/city-of-sorrow"
+        },
+        {
           name: "Watch Video",
           url: "https://vimeo.com/1111780483"
         }
@@ -208,6 +220,10 @@ const bigProjects = {
       projectDesc:
         "2D pixel-art text puzzle game made in 48 hours for Global Game Jam 2024 (theme: Make Us Laugh) with a team of 3 — a funny story set in a hospital ward. I was producer and programmer.",
       footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/let-me-out"
+        },
         {
           name: "Watch Video",
           url: "https://vimeo.com/1111777397"
@@ -222,6 +238,10 @@ const bigProjects = {
         "A 2D platformer about exploration and emotional healing, built solo in Unity over 3 months — five hand-crafted scenes follow a boy's journey from a dark forest to a colorful city.",
       footerLink: [
         {
+          name: "Read More",
+          url: "#/project/roi-journey"
+        },
+        {
           name: "Watch Video",
           url: "https://video.wixstatic.com/video/29049e_c95801204e1c4d639ca2a89dbdb7e5f7/1080p/mp4/file.mp4"
         }
@@ -234,6 +254,10 @@ const bigProjects = {
       projectDesc:
         "VR FPS prototype for Meta Quest 3 built in two weeks — a sci-fi robot uprising with a Bullet Time mechanic that lets you catch enemy bullets mid-air or dodge them.",
       footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/cyber-shoot-vr"
+        },
         {
           name: "Watch Video",
           url: "https://video.wixstatic.com/video/29049e_ce09018aceef4d0a97830b2db4640750/720p/mp4/file.mp4"
@@ -260,6 +284,10 @@ const achievementSection = {
       imageAlt: "Character art render",
       footerLink: [
         {
+          name: "Read More",
+          url: "#/project/character-art"
+        },
+        {
           name: "Reference",
           url: "https://www.artstation.com/artwork/oOd8GL"
         }
@@ -274,6 +302,10 @@ const achievementSection = {
       imageAlt: "Environment art render",
       footerLink: [
         {
+          name: "Read More",
+          url: "#/project/environment-art"
+        },
+        {
           name: "Watch Video",
           url: "https://video.wixstatic.com/video/29049e_993577cc22d3417aa10798b914628c31/480p/mp4/file.mp4"
         }
@@ -287,6 +319,10 @@ const achievementSection = {
         require("./assets/images/textureArt.png"),
       imageAlt: "Texture project render",
       footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/texture-project"
+        },
         {
           name: "Material",
           url: "https://vimeo.com/1111551668"
