@@ -1,0 +1,112 @@
+{
+  "_note": "Data scraped from https://seanwilliam2077.wixsite.com/my-site-1 (via Wix editor) on 2026-07-18. Image URLs: https://static.wixstatic.com/media/<id>. Video URLs: https://<path>.",
+  "about": {
+    "name": "Zijun (Sean) Xiao",
+    "title": "Game Programmer",
+    "phone": "+1 (646) 247 6700",
+    "email": "Seanwilliam2077@gmail.com",
+    "address": "Los Angeles, CA 91403"
+  },
+  "projects": [
+    {
+      "name": "Wolf Soga",
+      "type": "3D ARPG",
+      "engine": "Unreal",
+      "platform": "PC",
+      "devTime": "2 Months",
+      "team": "5 people (4 3D artists + 1 programmer)",
+      "role": ["Programmer", "UI Interact", "VFX", "Animation", "Prototype", "PlayTest"],
+      "intro": "Team project of 5 people, developed with 4 3D artists. ARPG where the player fights monsters and explores the world.",
+      "coreSystems": ["Third-person combat: dodge, run, melee attack, magic attack, parry, falling, respawn", "Enemy behavior: melee/range/magic attack, final boss battle", "Item system: level up, HP/attack, random pickups", "UI system: tutorial hints, interactive UI"],
+      "enemyLogic": "4 enemy types: melee (patrol, weapon pickup, spinning attack/smash/jump/thunder), range (shoot + take cover under 30% HP), magic (5 attacks incl. teleport + self-heal), boss (9 attacks incl. 50s CD ult, teleport axe throw, melee combos)",
+      "video": "https://vimeo.com/1111774512",
+      "coverImage": "https://static.wixstatic.com/media/29049e_5e23a3ffe8fc4b17bdb0fc706eafae0e~mv2.png"
+    },
+    {
+      "name": "RPG Parkour System",
+      "type": "3D RPG Parkour",
+      "engine": "Unreal",
+      "devTime": "2 Months",
+      "team": "Solo",
+      "role": ["Programmer", "Animation", "Prototype", "PlayTest"],
+      "intro": "Built a parkour system in Unreal for ARPG and used all mechanics to build a playable level.",
+      "functions": ["Slide (slope momentum + auto crouch under ceiling)", "Vault/Mantle", "Beam (spline path + jump)", "Grab Edge (move along edges, jump between)", "Cover (move along wall, jump between walls)", "Wall run & climb & slide", "Dodge/Sprint", "AI enemy see/hear/hurt perception + NPC branching dialogue"],
+      "video": "https://vimeo.com/1110810152",
+      "coverImage": "https://static.wixstatic.com/media/29049e_ca7bc19ee4804ec0aa6e0fa85aaee2ea~mv2.png"
+    },
+    {
+      "name": "City Of Sorrow",
+      "type": "3D ARPG",
+      "engine": "Unity",
+      "platform": "PC",
+      "devTime": "3 Months",
+      "team": "Solo",
+      "role": ["Programmer", "Level Layout", "Storytelling", "Animation", "Prototype", "PlayTest"],
+      "intro": "3D ARPG set in a mysterious medieval fantasy world; the player saves a castle shrouded by dark forces. First game; 12 monster types with varied AI (archer standing, melee tap/continuous random attack, mixed range/melee elites), level-name triggers, shortcut elevators. C# in Unity. Art assets from online resources.",
+      "video": "https://vimeo.com/1111780483",
+      "coverImage": "https://static.wixstatic.com/media/29049e_b3ba25aea7b54deb9a5506f1c3af121d~mv2.png"
+    },
+    {
+      "name": "Let Me Out",
+      "type": "2D Puzzle (text deciphering)",
+      "engine": "Unity",
+      "devTime": "2 Days (Global Game Jam 2024, theme: Make Us Laugh)",
+      "team": "3 People",
+      "role": ["Producer", "Programmer", "Level Layout", "Storytelling", "Animation", "Communicate"],
+      "intro": "2D text deciphering game in pixel style telling a funny story in a hospital ward, made for 2024 GGJ.",
+      "video": "https://vimeo.com/1111777397",
+      "coverImage": "https://static.wixstatic.com/media/29049e_a243a58711a840f98cd8812bb267a7b8~mv2.png"
+    },
+    {
+      "name": "ROI Journey",
+      "type": "2D Platformer",
+      "engine": "Unity",
+      "platform": "PC",
+      "devTime": "3 Months",
+      "team": "Solo",
+      "role": ["Programmer", "2D Art", "Graphic Design", "Story/Environment Design"],
+      "intro": "2D platformer focused on exploration and emotional expression. A boy named Roi, after a tragic childhood, journeys toward the city — a story of revelation and healing across 5 scenes: dark forest, ruined sky city, desert, colorful jungle (meets squirrel friend), colorful city ending with the goddess of Victory.",
+      "video": "https://video.wixstatic.com/video/29049e_c95801204e1c4d639ca2a89dbdb7e5f7/1080p/mp4/file.mp4",
+      "coverImage": "https://static.wixstatic.com/media/29049e_6ed8a0e7d8ca4f439e6faa289f497896~mv2.png"
+    },
+    {
+      "name": "Cyber Shoot (VR)",
+      "type": "VR FPS",
+      "engine": "Unity",
+      "platform": "Meta Quest 3",
+      "devTime": "2 Weeks + ongoing",
+      "team": "Solo",
+      "intro": "VR FPS set in the future where domestic robots turn on humans. Sci-fi combat with a Bullet Time mechanic: grab enemy bullets mid-air or dodge them; skill CD shown on right-hand orange circle.",
+      "video": "https://video.wixstatic.com/video/29049e_ce09018aceef4d0a97830b2db4640750/720p/mp4/file.mp4",
+      "coverImage": "https://static.wixstatic.com/media/29049e_9623e386f5714b13b36c2ecf5b5ccbee~mv2.jpg"
+    }
+  ],
+  "arts": [
+    {
+      "name": "Character Art",
+      "software": ["Blender", "Substance Painter"],
+      "process": ["Reference (https://www.artstation.com/artwork/oOd8GL)", "Sketch", "Model", "Texture", "Render"],
+      "coverImage": "https://static.wixstatic.com/media/29049e_12343e4060c545f499e75fc3cf473af7~mv2.jpg"
+    },
+    {
+      "name": "Environment Art",
+      "software": ["Maya", "Substance Painter & Designer"],
+      "process": ["Block out", "Render"],
+      "video": "https://video.wixstatic.com/video/29049e_993577cc22d3417aa10798b914628c31/480p/mp4/file.mp4",
+      "coverImage": "https://static.wixstatic.com/media/29049e_99d28351d53b42ef9e750ff5270aaf6a~mv2.png"
+    },
+    {
+      "name": "Texture Project",
+      "software": ["Maya", "Substance Painter & Designer"],
+      "videos": ["https://vimeo.com/1111551668", "https://vimeo.com/1111556250", "https://vimeo.com/1111553665"],
+      "coverImage": "https://static.wixstatic.com/media/29049e_ed3ac5d274ca40efa866f6c765f75621~mv2.png"
+    }
+  ],
+  "branding": {
+    "siteName": "GallopForge",
+    "logo": "https://static.wixstatic.com/media/29049e_b54a90c84696406290a62ae5e6e7f658~mv2.png",
+    "heroGraphic_TrustMeImAProgrammer": "https://static.wixstatic.com/media/29049e_c22f9957b95e4730801be61c20503c45~mv2.png",
+    "unrealLogo": "https://static.wixstatic.com/media/29049e_bb6e0ebd027e4ad694a562f64e5507b5~mv2.png",
+    "unityLogo": "https://static.wixstatic.com/media/29049e_a462d7f663be4801a1362e3c116596ba~mv2.png"
+  }
+}
