@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SeanSiu_Portfolio/static/css/main.f4a4acd4.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.fd75d866.js",
+    "main.css": "/SeanSiu_Portfolio/static/css/main.22df51de.css",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.cef85577.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -26,15 +26,15 @@
     "static/media/resume.pdf": "/SeanSiu_Portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/SeanSiu_Portfolio/index.html",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.f4a4acd4.css.map": "/SeanSiu_Portfolio/static/css/main.f4a4acd4.css.map",
-    "main.fd75d866.js.map": "/SeanSiu_Portfolio/static/js/main.fd75d866.js.map",
+    "main.22df51de.css.map": "/SeanSiu_Portfolio/static/css/main.22df51de.css.map",
+    "main.cef85577.js.map": "/SeanSiu_Portfolio/static/js/main.cef85577.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/SeanSiu_Portfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4a4acd4.css",
-    "static/js/main.fd75d866.js"
+    "static/css/main.22df51de.css",
+    "static/js/main.cef85577.js"
   ]
 }
