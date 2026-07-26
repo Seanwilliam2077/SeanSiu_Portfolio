@@ -44,6 +44,28 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.phoneCN ? (
+        <a
+          href={`tel:${socialMediaLinks.phoneCN.replace(/\s/g, "")}`}
+          className="icon-button phone"
+          title={socialMediaLinks.phoneCN}
+        >
+          <i className="fas fa-phone"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.phoneUS ? (
+        <a
+          href={`tel:${socialMediaLinks.phoneUS.replace(/\s/g, "")}`}
+          className="icon-button phone"
+          title={socialMediaLinks.phoneUS}
+        >
+          <i className="fas fa-phone"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}

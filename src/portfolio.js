@@ -26,7 +26,9 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/Seanwilliam2077",
   linkedin: "https://www.linkedin.com/in/zijunxiao",
-  gmail: "zxiao316@gatech.edu",
+  gmail: "seanwilliam2077@gmail.com",
+  phoneCN: "+86 19370987201",
+  phoneUS: "+1 646 247 6700",
   display: true
 };
 
