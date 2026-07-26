@@ -17,9 +17,9 @@ const greeting = {
   username: "Zijun Xiao",
   title: "Hi, I'm Zijun",
   subTitle: emoji(
-    "A Technical Artist and Computer Graphics M.S. candidate at Georgia Tech, focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D. Currently based in Atlanta and a U.S. Green Card holder."
+    "A Technical Artist and Computer Graphics M.S. candidate at Georgia Tech, focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D. Currently based in Atlanta."
   ),
-  resumeLink: "resume.pdf",
+  resumeLink: "",
   displayGreeting: true
 };
 
@@ -67,7 +67,6 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Georgia Institute of Technology",
-      logo: require("./assets/images/gtLogo.svg"),
       subHeader: "M.S. in Computer Graphics",
       duration: "Sep 2025 - Jun 2027",
       desc:
@@ -76,7 +75,6 @@ const educationInfo = {
     },
     {
       schoolName: "Savannah College of Art and Design (SCAD)",
-      logo: require("./assets/images/scadLogo.svg"),
       subHeader: "M.S. in Game Development",
       duration: "Sep 2024 - Aug 2025",
       desc:
@@ -85,7 +83,6 @@ const educationInfo = {
     },
     {
       schoolName: "South China Normal University",
-      logo: require("./assets/images/scnuLogo.svg"),
       subHeader: "B.S. in Finance",
       duration: "Sep 2019 - Jun 2023",
       desc: "",
@@ -108,47 +105,19 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "Technical Artist (PCG)",
       company: "Tencent · Game AI Engine Department",
       companylogo: require("./assets/images/tencentLogo.svg"),
-      date: "May 2026 - Present",
-      desc:
-        "Building production-ready Agent × LLM × PCG workflows for large-scale game-content generation.",
-      descBullets: [
-        "Developed an Agent × LLM × PCG white-box generation pipeline for Delta Force, enabling minute-level level production through natural-language intent with node-level control.",
-        "Built Veda for visual editing and real-time PCG preview inside UE5; developed MochiAgent to translate designer intent into executable PCG node sequences.",
-        "Adapted EasyLayout to Mochi's unicast delegate interface for seamless orchestration across the generation workflow.",
-        "Built a one-click world-model content pipeline from fps / video count / duration / optional theme to LLM prompts, AI three-image generation, UE white-box scenes, automatic camera rigs, MRQ rendering and mp4 export, with real-time web progress and direct video playback. The six-stage flow covers Web UI, prompt generation, Phase A images, Phase B white-box capture, Phase C encoding and atomic JSON progress aggregation.",
-        "Implemented dynamic capacity based on camera-rig candidates surviving collision and image-quality checks, allowing the orchestrator to consume scenes on demand without wasting image-generation API calls. Propagated fps × duration through CLI, phase_b_args and shared capture_config into LevelSequence, MRQ and ffmpeg for frame-rate consistency.",
-        "Made Phase A/B/C idempotent and resumable, launched each editor shard as a fresh process to control memory accumulation, added MRQ timeout drain and shard kill fallbacks, and enforced disk-peak prechecks. Fixed all 22 confirmed defects from a 25-agent adversarial review."
-      ]
+      date: "May 2026 - Present"
     },
     {
-      role: "Next-Generation Neural Rendering Research",
       company: "Frontier Lab (Tencent) · Frontier Rendering Group",
       companylogo: require("./assets/images/frontierLogo.svg"),
-      date: "Dec 2025 - Present",
-      desc:
-        "Exploring deployable, interactive, editable and generative neural representations for game worlds.",
-      descBullets: [
-        "Designed explicit 3D world-model workflows that extend 3DGS from visual reconstruction to controllable game-scene representations using engine cameras, GT pose, depth, Mesh and semantics.",
-        "Explored lightweight mobile/Web 3DGS through block partitioning, LoD trees, streaming, compression and fixed-budget quality/performance control; co-scheduled Mesh and 3DGS by LoD to address depth occlusion, boundary blending and lighting consistency for stable on-device deployment.",
-        "Investigated Transformer-based and generative neural rendering from Scene tokens to Image tokens, using Attention to model light transport and converting low-cost G-buffer / low-poly renders into high-quality, style- and semantic-controllable images through upscaling, style transfer, GI completion and temporal synthesis.",
-        "Developed UE5 Substrate materials with custom attributes for Neural Rendering and a C++ editor plugin for large-scale asset data extraction and cleaning, with closed-loop validation under frame-rate, VRAM, bandwidth and power constraints."
-      ]
+      date: "Dec 2025 - Present"
     },
     {
-      role: "Technical Artist",
       company: "Seasun (Kingsoft)",
       companylogo: require("./assets/images/seasunLogo.svg"),
-      date: "Jul 2023 - Dec 2023",
-      desc:
-        "Supported an engine migration through rendering validation, performance profiling and technical-art pipeline standards.",
-      descBullets: [
-        "Migrated art assets across engines and validated compatibility and visual fidelity for complex scenes and materials in the new rendering pipeline.",
-        "Profiled high-load scenes and helped resolve excessive Draw Calls, abnormal Overdraw and VRAM over-budget issues that caused frame drops and stutter.",
-        "Helped establish asset-production specifications and a pre-emptive inspection flow that protected visual quality while enforcing performance budgets."
-      ]
+      date: "Jul 2023 - Dec 2023"
     }
   ]
 };
@@ -159,38 +128,183 @@ const openSource = {
 };
 
 const bigProjects = {
-  title: "Project Experience",
-  subtitle: "SELECTED GAME DEVELOPMENT · TECHNICAL ART · DCC PIPELINE WORK",
+  title: "Game Projects",
+  subtitle: "SELECTED WORK — FROM 3D ARPG COMBAT TO VR SHOOTERS",
   projects: [
     {
-      image: require("./assets/images/wolfSoga.png"),
-      projectName: "ARPG Game Project",
+      image:
+        require("./assets/images/wolfSoga.png"),
+      projectName: "Wolf Soga",
       projectDesc:
-        "Technical Artist / Technical Designer — built combat hit detection and WPO/dynamic-mask skill shaders; led open-world LOD, batching and memory optimization that reduced rendering overhead by 30%; developed multi-stage Boss AI with Behavior Trees and FSM while controlling CPU Tick cost.",
+        "3D ARPG built in Unreal by a team of 5 (solo programmer with 4 artists) in 2 months. I built the third-person combat system (dodge, parry, melee & magic), four enemy AI archetypes including the final boss, the item system and the full UI.",
       footerLink: [
-        {name: "Read More", url: "#/project/arpg-game-project"},
-        {name: "Watch Video", url: "https://vimeo.com/1111774512"}
+        {
+          name: "Read More",
+          url: "#/project/wolf-soga"
+        },
+        {
+          name: "Watch Video",
+          url: "https://vimeo.com/1111774512"
+        }
       ]
     },
     {
-      image: require("./assets/images/rpgParkour.png"),
-      projectName: "Parkour Animation & DCC Tooling System",
+      image:
+        require("./assets/images/rpgParkour.png"),
+      projectName: "RPG Parkour System",
       projectDesc:
-        "Technical Animation — implemented procedural IK and animation-blueprint solutions for uneven-terrain foot placement and climbing hand interaction; built Python/MEL Maya automation for one-click character and animation import to UE5 with standardized skeleton and rigging rules.",
+        "A complete parkour system for ARPGs, built solo in Unreal in 2 months — slide, vault/mantle, beam walk, edge grab, cover, wall run & climb, dodge/sprint, plus enemy AI perception and branching NPC dialogue, assembled into a playable level.",
       footerLink: [
-        {name: "Read More", url: "#/project/parkour-dcc-tooling"},
-        {name: "Watch Video", url: "https://vimeo.com/1110810152"}
+        {
+          name: "Read More",
+          url: "#/project/rpg-parkour-system"
+        },
+        {
+          name: "Watch Video",
+          url: "https://vimeo.com/1110810152"
+        }
+      ]
+    },
+    {
+      image:
+        require("./assets/images/cityOfSorrow.png"),
+      projectName: "City Of Sorrow",
+      projectDesc:
+        "My first game: a 3D ARPG in Unity set in a medieval fantasy castle, built solo in 3 months — 12 enemy types with distinct attack patterns in C#, level scripting, shortcut elevators and respawn design.",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/city-of-sorrow"
+        },
+        {
+          name: "Watch Video",
+          url: "https://vimeo.com/1111780483"
+        }
+      ]
+    },
+    {
+      image:
+        require("./assets/images/letMeOut.png"),
+      projectName: "Let Me Out",
+      projectDesc:
+        "2D pixel-art text puzzle game made in 48 hours for Global Game Jam 2024 (theme: Make Us Laugh) with a team of 3 — a funny story set in a hospital ward. I was producer and programmer.",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/let-me-out"
+        },
+        {
+          name: "Watch Video",
+          url: "https://vimeo.com/1111777397"
+        }
+      ]
+    },
+    {
+      image:
+        require("./assets/images/roiJourney.png"),
+      projectName: "ROI Journey",
+      projectDesc:
+        "A 2D platformer about exploration and emotional healing, built solo in Unity over 3 months — five hand-crafted scenes follow a boy's journey from a dark forest to a colorful city.",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/roi-journey"
+        },
+        {
+          name: "Watch Video",
+          url: "https://video.wixstatic.com/video/29049e_c95801204e1c4d639ca2a89dbdb7e5f7/1080p/mp4/file.mp4"
+        }
+      ]
+    },
+    {
+      image:
+        require("./assets/images/cyberShoot.jpg"),
+      projectName: "Cyber Shoot (VR)",
+      projectDesc:
+        "VR FPS prototype for Meta Quest 3 built in two weeks — a sci-fi robot uprising with a Bullet Time mechanic that lets you catch enemy bullets mid-air or dodge them.",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/cyber-shoot-vr"
+        },
+        {
+          name: "Watch Video",
+          url: "https://video.wixstatic.com/video/29049e_ce09018aceef4d0a97830b2db4640750/720p/mp4/file.mp4"
+        }
       ]
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 const achievementSection = {
   title: emoji("Art Projects 🎨"),
-  subtitle: "",
-  achievementsCards: [],
-  display: false
+  subtitle: "CHARACTER, ENVIRONMENT AND TEXTURE WORK",
+  achievementsCards: [
+    {
+      title: "Character Art",
+      subtitle:
+        "Full character pipeline — sketch, model, texture, render — in Blender and Substance Painter.",
+      image:
+        require("./assets/images/characterArt.jpg"),
+      imageAlt: "Character art render",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/character-art"
+        },
+        {
+          name: "Reference",
+          url: "https://www.artstation.com/artwork/oOd8GL"
+        }
+      ]
+    },
+    {
+      title: "Environment Art",
+      subtitle:
+        "Environment scene from block-out to final render in Maya with Substance Painter & Designer.",
+      image:
+        require("./assets/images/environmentArt.png"),
+      imageAlt: "Environment art render",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/environment-art"
+        },
+        {
+          name: "Watch Video",
+          url: "https://video.wixstatic.com/video/29049e_993577cc22d3417aa10798b914628c31/480p/mp4/file.mp4"
+        }
+      ]
+    },
+    {
+      title: "Texture Project",
+      subtitle:
+        "Material and texture studies in Maya with Substance Painter & Designer.",
+      image:
+        require("./assets/images/textureArt.png"),
+      imageAlt: "Texture project render",
+      footerLink: [
+        {
+          name: "Read More",
+          url: "#/project/texture-project"
+        },
+        {
+          name: "Material",
+          url: "https://vimeo.com/1111551668"
+        },
+        {
+          name: "Render",
+          url: "https://vimeo.com/1111556250"
+        },
+        {
+          name: "Substance",
+          url: "https://vimeo.com/1111553665"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
 };
 
 const blogSection = {
