@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SeanSiu_Portfolio/static/css/main.22df51de.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.720531c8.js",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.fef7a209.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -24,10 +24,8 @@
     "static/media/skill.svg": "/SeanSiu_Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/SeanSiu_Portfolio/index.html",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "static/media/seasunLogo.svg": "/SeanSiu_Portfolio/static/media/seasunLogo.d77c36012d1654065b2b09e75769d523.svg",
-    "static/media/tencentLogo.svg": "/SeanSiu_Portfolio/static/media/tencentLogo.92a160194f3ace791e5f991cd5800ca9.svg",
     "main.22df51de.css.map": "/SeanSiu_Portfolio/static/css/main.22df51de.css.map",
-    "main.720531c8.js.map": "/SeanSiu_Portfolio/static/js/main.720531c8.js.map",
+    "main.fef7a209.js.map": "/SeanSiu_Portfolio/static/js/main.fef7a209.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
@@ -35,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.22df51de.css",
-    "static/js/main.720531c8.js"
+    "static/js/main.fef7a209.js"
   ]
 }
