@@ -17,7 +17,7 @@ const greeting = {
   username: "Zijun Xiao",
   title: "Hi, I'm Zijun",
   subTitle: emoji(
-    "A Technical Artist, Graphics Engineer and Researcher focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D. Currently based in Atlanta."
+    "A Technical Artist, Graphics Engineer and Researcher focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D."
   ),
   resumeLink: "",
   displayGreeting: true
@@ -37,13 +37,13 @@ const skillsSection = {
   skills: [
     emoji("⚡ Programming Languages: C++, C#, Python, Java and HLSL"),
     emoji(
-      "⚡ Engines & Tools: Unreal Engine 5, Unity, Maya, Blender, Substance Painter/Designer and RenderDoc"
+      "⚡ Engines & Tools: Unreal Engine 5, Unity, Houdini, Maya, Blender, Substance Painter/Designer and RenderDoc"
     ),
     emoji(
       "⚡ Core TA Domains: custom rendering pipelines, performance profiling, memory management, complex materials and shaders, procedural animation (IK), 3DGS and PCG / Agent automation"
     ),
     emoji(
-      "⚡ R&D Capabilities: cross-functional collaboration, automated asset review, large-scale data processing and engineering deployment of frontier graphics technology"
+      "⚡ Neural Rendering R&D: 3D Gaussian Splatting, large-scale 3D scene reconstruction and explicit 3D world models, and Transformer-based / generative neural rendering — e.g. VortexGaussians, real-time simulation-driven fire & smoke rendered as native Gaussian-splatting content"
     )
   ],
   softwareSkills: [
@@ -54,6 +54,7 @@ const skillsSection = {
     {skillName: "HLSL", fontAwesomeClassname: "fas fa-paint-brush"},
     {skillName: "Unreal Engine 5", fontAwesomeClassname: "fas fa-gamepad"},
     {skillName: "Unity", fontAwesomeClassname: "fab fa-unity"},
+    {skillName: "Houdini", fontAwesomeClassname: "fas fa-draw-polygon"},
     {skillName: "Maya", fontAwesomeClassname: "fas fa-cubes"},
     {skillName: "Blender", fontAwesomeClassname: "fas fa-cube"},
     {skillName: "Substance", fontAwesomeClassname: "fas fa-palette"},
