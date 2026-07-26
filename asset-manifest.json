@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SeanSiu_Portfolio/static/css/main.5f6354e7.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.ee97375e.js",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.ec04c20a.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -25,7 +25,7 @@
     "index.html": "/SeanSiu_Portfolio/index.html",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.5f6354e7.css.map": "/SeanSiu_Portfolio/static/css/main.5f6354e7.css.map",
-    "main.ee97375e.js.map": "/SeanSiu_Portfolio/static/js/main.ee97375e.js.map",
+    "main.ec04c20a.js.map": "/SeanSiu_Portfolio/static/js/main.ec04c20a.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.5f6354e7.css",
-    "static/js/main.ee97375e.js"
+    "static/js/main.ec04c20a.js"
   ]
 }
