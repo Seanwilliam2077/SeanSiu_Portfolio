@@ -109,8 +109,8 @@ const workExperiences = {
       companylogo: require("./assets/images/tencent.jpg"),
       date: "Dec 2025 - Present",
       descBullets: [
-        "Ecosystem Development Dept · Domestic Publishing — Pre-research",
-        "AI Engine Dept · Common Technology — PCG & Frontier Lab"
+        "Domestic Publishing · Ecosystem Development Dept · Pre-research Team",
+        "Cross Tech · AI Engine Dept · PCG Team & Frontier Lab"
       ]
     },
     {
@@ -118,7 +118,7 @@ const workExperiences = {
       companylogo: require("./assets/images/seasun.jpg"),
       date: "Jul 2023 - Dec 2023",
       descBullets: [
-        "JX3 (Sword Net 3) Engine Dept — Built a QA pipeline for asset transfer"
+        "JX3 (Sword Net 3) · Engine Dev Dept · QA Pipeline Team"
       ]
     }
   ]
