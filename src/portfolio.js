@@ -116,7 +116,10 @@ const workExperiences = {
     {
       company: "Seasun (Kingsoft)",
       companylogo: require("./assets/images/seasun.jpg"),
-      date: "Jul 2023 - Dec 2023"
+      date: "Jul 2023 - Dec 2023",
+      descBullets: [
+        "JX3 (Sword Net 3) Engine Dept — Built a QA pipeline for asset transfer"
+      ]
     }
   ]
 };
