@@ -1,14 +1,21 @@
 {
   "files": {
     "main.css": "/SeanSiu_Portfolio/static/css/main.22df51de.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.40c8c49e.js",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.edad1eb5.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
-    "static/js/769.4a72202e.chunk.js": "/SeanSiu_Portfolio/static/js/769.4a72202e.chunk.js",
+    "static/js/769.bda0d7b7.chunk.js": "/SeanSiu_Portfolio/static/js/769.bda0d7b7.chunk.js",
+    "static/media/environmentArt.png": "/SeanSiu_Portfolio/static/media/environmentArt.3fd3932b6dc5a3e0050e.png",
+    "static/media/textureArt.png": "/SeanSiu_Portfolio/static/media/textureArt.2ec7786344b12810d507.png",
+    "static/media/roiJourney.png": "/SeanSiu_Portfolio/static/media/roiJourney.5152178689e5531d0306.png",
+    "static/media/cityOfSorrow.png": "/SeanSiu_Portfolio/static/media/cityOfSorrow.db6f18d13278f3b85e09.png",
     "static/media/wolfSoga.png": "/SeanSiu_Portfolio/static/media/wolfSoga.62e6c4a34480c0a40a26.png",
+    "static/media/letMeOut.png": "/SeanSiu_Portfolio/static/media/letMeOut.b23c7fbb152b1e5c95c2.png",
     "static/media/resume.pdf": "/SeanSiu_Portfolio/static/media/resume.07fd1e6fab6a4131113b.pdf",
     "static/media/Montserrat-Regular.ttf": "/SeanSiu_Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/cyberShoot.jpg": "/SeanSiu_Portfolio/static/media/cyberShoot.9db9781a0cb5f374373b.jpg",
+    "static/media/characterArt.jpg": "/SeanSiu_Portfolio/static/media/characterArt.f87e9cb4eb3900322219.jpg",
     "static/media/rpgParkour.png": "/SeanSiu_Portfolio/static/media/rpgParkour.e19dac0f72e50b60332c.png",
     "static/media/Agustina.woff": "/SeanSiu_Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/manOnTable.svg": "/SeanSiu_Portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -17,21 +24,18 @@
     "static/media/skill.svg": "/SeanSiu_Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/SeanSiu_Portfolio/index.html",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "static/media/scadLogo.svg": "/SeanSiu_Portfolio/static/media/scadLogo.cc8e418779a66c3510a61ec893017c43.svg",
-    "static/media/scnuLogo.svg": "/SeanSiu_Portfolio/static/media/scnuLogo.3597c66daf3f4ddcfd6e8472d4e66fa3.svg",
-    "static/media/gtLogo.svg": "/SeanSiu_Portfolio/static/media/gtLogo.ad8d7c5c222d7d9cec86e6b4a405481a.svg",
     "static/media/frontierLogo.svg": "/SeanSiu_Portfolio/static/media/frontierLogo.11141bd935d0f116184c9c99225ab49b.svg",
     "static/media/seasunLogo.svg": "/SeanSiu_Portfolio/static/media/seasunLogo.d77c36012d1654065b2b09e75769d523.svg",
     "static/media/tencentLogo.svg": "/SeanSiu_Portfolio/static/media/tencentLogo.92a160194f3ace791e5f991cd5800ca9.svg",
     "main.22df51de.css.map": "/SeanSiu_Portfolio/static/css/main.22df51de.css.map",
-    "main.40c8c49e.js.map": "/SeanSiu_Portfolio/static/js/main.40c8c49e.js.map",
+    "main.edad1eb5.js.map": "/SeanSiu_Portfolio/static/js/main.edad1eb5.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
-    "769.4a72202e.chunk.js.map": "/SeanSiu_Portfolio/static/js/769.4a72202e.chunk.js.map"
+    "769.bda0d7b7.chunk.js.map": "/SeanSiu_Portfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22df51de.css",
-    "static/js/main.40c8c49e.js"
+    "static/js/main.edad1eb5.js"
   ]
 }
