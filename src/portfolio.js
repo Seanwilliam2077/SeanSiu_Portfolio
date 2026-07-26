@@ -27,8 +27,7 @@ const socialMediaLinks = {
   github: "https://github.com/Seanwilliam2077",
   linkedin: "https://www.linkedin.com/in/zijunxiao",
   gmail: "seanwilliam2077@gmail.com",
-  phoneCN: "+86 19370987201",
-  phoneUS: "+1 646 247 6700",
+  phone: "+86 19370987201",
   display: true
 };
 
@@ -343,7 +342,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "I am open to conversations about technical art, real-time rendering, PCG / Agent pipelines, neural rendering and game-engine R&D.",
-  number: "19370987201",
+  numbers: ["+86 19370987201", "+1 646 247 6700"],
   email_address: "zxiao316@gatech.edu"
 };
 

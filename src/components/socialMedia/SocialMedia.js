@@ -44,22 +44,11 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.phoneCN ? (
+      {socialMediaLinks.phone ? (
         <a
-          href={`tel:${socialMediaLinks.phoneCN.replace(/\s/g, "")}`}
+          href={`tel:${socialMediaLinks.phone.replace(/\s/g, "")}`}
           className="icon-button phone"
-          title={socialMediaLinks.phoneCN}
-        >
-          <i className="fas fa-phone"></i>
-          <span></span>
-        </a>
-      ) : null}
-
-      {socialMediaLinks.phoneUS ? (
-        <a
-          href={`tel:${socialMediaLinks.phoneUS.replace(/\s/g, "")}`}
-          className="icon-button phone"
-          title={socialMediaLinks.phoneUS}
+          title={socialMediaLinks.phone}
         >
           <i className="fas fa-phone"></i>
           <span></span>

@@ -29,18 +29,19 @@ export default function Contact() {
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
-              {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
-              )}
+              {contactInfo.numbers &&
+                contactInfo.numbers.map((num, i) => (
+                  <React.Fragment key={i}>
+                    <a
+                      className="contact-detail"
+                      href={"tel:" + num.replace(/\s/g, "")}
+                    >
+                      {num}
+                    </a>
+                    <br />
+                    <br />
+                  </React.Fragment>
+                ))}
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
