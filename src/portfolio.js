@@ -17,7 +17,7 @@ const greeting = {
   username: "Zijun Xiao",
   title: "Hi, I'm Zijun",
   subTitle: emoji(
-    "A Technical Artist and Computer Graphics M.S. candidate at Georgia Tech, focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D. Currently based in Atlanta."
+    "A Technical Artist, Graphics Engineer and Researcher focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D. Currently based in Atlanta."
   ),
   resumeLink: "",
   displayGreeting: true
