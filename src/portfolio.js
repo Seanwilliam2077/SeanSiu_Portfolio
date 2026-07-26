@@ -106,7 +106,7 @@ const workExperiences = {
   experience: [
     {
       company: "Tencent",
-      companylogo: require("./assets/images/tencentLogo.svg"),
+      companylogo: require("./assets/images/tencent.jpg"),
       date: "Dec 2025 - Present",
       descBullets: [
         "Ecosystem Development Dept · Domestic Publishing — Pre-research",
@@ -115,7 +115,7 @@ const workExperiences = {
     },
     {
       company: "Seasun (Kingsoft)",
-      companylogo: require("./assets/images/seasunLogo.svg"),
+      companylogo: require("./assets/images/seasun.jpg"),
       date: "Jul 2023 - Dec 2023"
     }
   ]
