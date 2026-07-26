@@ -105,14 +105,13 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      company: "Tencent · Game AI Engine Department",
+      company: "Tencent",
       companylogo: require("./assets/images/tencentLogo.svg"),
-      date: "May 2026 - Present"
-    },
-    {
-      company: "Frontier Lab (Tencent) · Frontier Rendering Group",
-      companylogo: require("./assets/images/frontierLogo.svg"),
-      date: "Dec 2025 - Present"
+      date: "Dec 2025 - Present",
+      descBullets: [
+        "Ecosystem Development Dept · Domestic Publishing — Pre-research",
+        "AI Engine Dept · Common Technology — PCG & Frontier Lab"
+      ]
     },
     {
       company: "Seasun (Kingsoft)",
