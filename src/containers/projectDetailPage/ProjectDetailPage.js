@@ -5,11 +5,21 @@ import {useLocalStorage} from "../../hooks/useLocalStorage";
 
 function Video({video}) {
   if (!video) return null;
-  if (video.type === "vimeo") {
+  if (video.type === "vimeo" || video.type === "youtube") {
+    const src =
+      video.type === "vimeo"
+        ? `https://player.vimeo.com/video/${video.id}`
+        : `https://www.youtube.com/embed/${video.id}`;
     return (
-      <div className="detail-video-wrapper">
+      <div
+        className={
+          video.portrait
+            ? "detail-video-wrapper detail-video-portrait"
+            : "detail-video-wrapper"
+        }
+      >
         <iframe
-          src={`https://player.vimeo.com/video/${video.id}`}
+          src={src}
           title="project video"
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"

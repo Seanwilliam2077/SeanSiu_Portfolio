@@ -100,6 +100,14 @@
   }
 }
 
+/* Vertical video (e.g. YouTube Shorts): 9:16 instead of 16:9, kept narrow. */
+.detail-video-portrait {
+  padding-top: 0;
+  aspect-ratio: 9 / 16;
+  max-width: 340px;
+  margin-left: 0;
+}
+
 .detail-section {
   margin-top: 2.5rem;
 }

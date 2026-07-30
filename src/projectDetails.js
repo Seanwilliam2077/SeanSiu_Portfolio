@@ -347,6 +347,66 @@ const projectDetails = {
     ].map(wix)
   },
 
+  gobuzz: {
+    title: "GoBuzz — Location-Based Social App",
+    meta: [
+      "Type: Mobile Social App",
+      "Stack: Flutter · FastAPI · Google Cloud",
+      "Platform: Android",
+      "Team: 5 people",
+      "Event: Google AI Vibeathon (entry #263)",
+      "Status: Working demo"
+    ],
+    intro:
+      "GoBuzz helps international students and newcomers — people who feel alone in a crowded, unfamiliar city — find nearby people who share their niche interests. Instead of real-name, always-online matching, it uses anonymous location-based matching to gather people around shared interests, and asynchronous message drops so company does not depend on both sides being online at the same time.",
+    video: {type: "youtube", id: "ZHFhkxaPVQo", portrait: true},
+    externalLinks: [
+      {
+        name: "GitHub Repository",
+        url: "https://github.com/GuGuYou/GoogleConnectTheWorld"
+      },
+      {
+        name: "Demo APK (Releases)",
+        url: "https://github.com/GuGuYou/GoogleConnectTheWorld/releases"
+      }
+    ],
+    sections: [
+      {
+        heading: "Core Features",
+        bullets: [
+          "HiveScene — anonymous location-based matching that clusters nearby people with shared interest tags into an enterable space",
+          "Nearby map — Google Maps rendering of nearby users, activity pins and message bubbles",
+          "Asynchronous message drops — leave and receive messages without both users being online",
+          "Multiplayer rooms — voice rooms, draw-and-guess, game rooms, cinema and music bar"
+        ]
+      },
+      {
+        heading: "Google Technology",
+        bullets: [
+          "Google Maps Platform (google_maps_flutter) — map rendering and the location layer the whole matching experience is built on",
+          "Vertex AI Gemini (gemini-2.5-flash-image) — image-to-image generation that turns a reference photo into a consistent 2D anime-style avatar",
+          "Google Cloud — service-account / ADC authentication with the backend deployable to Cloud Run",
+          "Google Fonts — dynamic brand typography for the cyber-neon visual style"
+        ]
+      },
+      {
+        heading: "Security Architecture",
+        body:
+          "Rather than hardcoding an API key in the client — the common shortcut that leaks credentials and invites quota abuse — Google Cloud credentials live only in the FastAPI backend. The client calls Vertex AI Gemini through that backend proxy, which also enforces a daily quota. The client touches zero Google credentials."
+      },
+      {
+        heading: "Product Design",
+        body:
+          "The design bet is that anonymity plus niche interest tags lowers the social pressure of real-name apps, while location keeps matches physically nearby. Asynchronous messages solve the timing problem that live-matching apps ignore: the people who understand your niche interests are rarely online at the same moment you feel alone."
+      },
+      {
+        heading: "User Research",
+        body:
+          "Around 10 international students in the US logged into the GoBuzz prototype and gave feedback on the core problem — building a social circle after moving to an unfamiliar city, and finding people who share niche interests. Representative feedback: the ability to find like-minded people nearby without exposing a real identity resonated most. Sample size is small and concentrated in the team's reachable network, so broader validation is still open."
+      }
+    ]
+  },
+
   "character-art": {
     title: "Character Art",
     meta: ["Personal Work", "Software: Blender, Substance Painter"],

@@ -81,7 +81,10 @@
   position: absolute;
   object-fit: contain;
   background-color: #fff;
-  padding: 0.5rem;
+  /* Keep the logo inside the circle's inscribed square (d / sqrt(2)) so wide
+     logos are not clipped by the rounded corners. */
+  box-sizing: border-box;
+  padding: 1.15rem;
   left: 0;
   right: 0;
   top: 7rem;
@@ -120,7 +123,8 @@
 
 .experience-text-details {
   padding: 1.5rem;
-  margin-top: 2rem;
+  /* Clears the logo, which overhangs the banner by half its height. */
+  margin-top: 3rem;
 }
 
 /* Media Query */
@@ -139,6 +143,7 @@
   .experience-roundedimg {
     width: 6.5rem;
     height: 6.5rem;
+    padding: 0.95rem;
   }
 }
 

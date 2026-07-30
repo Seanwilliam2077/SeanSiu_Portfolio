@@ -241,6 +241,28 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
+const appProjects = {
+  title: "App Projects",
+  subtitle: "PRODUCT & AI ENGINEERING — FLUTTER · GOOGLE CLOUD · GEMINI",
+  projects: [
+    {
+      image: require("./assets/images/gobuzz.png"),
+      projectName: "GoBuzz — Location-Based Social App",
+      projectDesc:
+        "A Flutter app that helps international students and newcomers find nearby people who share their niche interests, built for the Google AI Vibeathon with a team of 5. Anonymous location-based matching on Google Maps, asynchronous message drops and multiplayer rooms, plus AI avatar generation powered by Vertex AI Gemini through a FastAPI backend on Cloud Run — the client never touches Google credentials.",
+      footerLink: [
+        {name: "Read More", url: "#/project/gobuzz"},
+        {name: "Watch Demo", url: "https://www.youtube.com/shorts/ZHFhkxaPVQo"},
+        {
+          name: "GitHub",
+          url: "https://github.com/GuGuYou/GoogleConnectTheWorld"
+        }
+      ]
+    }
+  ],
+  display: true
+};
+
 const achievementSection = {
   title: emoji("Art Projects 🎨"),
   subtitle: "CHARACTER, ENVIRONMENT AND TEXTURE WORK",
@@ -365,6 +387,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  appProjects,
   achievementSection,
   blogSection,
   talkSection,
