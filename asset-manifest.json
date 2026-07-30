@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SeanSiu_Portfolio/static/css/main.8a843268.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.5a056910.js",
+    "main.css": "/SeanSiu_Portfolio/static/css/main.76ede94f.css",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.ceda43c4.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -12,6 +12,7 @@
     "static/media/cityOfSorrow.png": "/SeanSiu_Portfolio/static/media/cityOfSorrow.db6f18d13278f3b85e09.png",
     "static/media/wolfSoga.png": "/SeanSiu_Portfolio/static/media/wolfSoga.62e6c4a34480c0a40a26.png",
     "static/media/letMeOut.png": "/SeanSiu_Portfolio/static/media/letMeOut.b23c7fbb152b1e5c95c2.png",
+    "static/media/gobuzz.png": "/SeanSiu_Portfolio/static/media/gobuzz.ffe1f9edde87a7fb0bd4.png",
     "static/media/resume.pdf": "/SeanSiu_Portfolio/static/media/resume.07fd1e6fab6a4131113b.pdf",
     "static/media/Montserrat-Regular.ttf": "/SeanSiu_Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/cyberShoot.jpg": "/SeanSiu_Portfolio/static/media/cyberShoot.9db9781a0cb5f374373b.jpg",
@@ -24,15 +25,15 @@
     "static/media/skill.svg": "/SeanSiu_Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/SeanSiu_Portfolio/index.html",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.8a843268.css.map": "/SeanSiu_Portfolio/static/css/main.8a843268.css.map",
-    "main.5a056910.js.map": "/SeanSiu_Portfolio/static/js/main.5a056910.js.map",
+    "main.76ede94f.css.map": "/SeanSiu_Portfolio/static/css/main.76ede94f.css.map",
+    "main.ceda43c4.js.map": "/SeanSiu_Portfolio/static/js/main.ceda43c4.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/SeanSiu_Portfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a843268.css",
-    "static/js/main.5a056910.js"
+    "static/css/main.76ede94f.css",
+    "static/js/main.ceda43c4.js"
   ]
 }
