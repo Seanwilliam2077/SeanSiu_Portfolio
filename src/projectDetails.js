@@ -515,6 +515,287 @@ const projectDetails = {
       "29049e_0ec42fa14ddb45889f9f1b4b3fdd9006~mv2.png",
       "29049e_b6ce5a16bfd2450da0576dd4d8eb2db2~mv2.png"
     ].map(wix)
+  },
+
+  "cgai-a2a": {
+    title: "A2a — Signed Distance Fields & Ray Marching",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: SDF · Ray Marching",
+      "Tech: WebGL · GLSL fragment shader"
+    ],
+    roles: ["Shader Programming", "Procedural Geometry", "Real-time Rendering"],
+    intro:
+      "A real-time scene rendered entirely from an analytic Signed Distance Field. The camera ray-marches a field of primitives (sphere, box, torus) and shades hits with Phong lighting. The two videos show the baseline scene and a creative 'reaching for the void' composition with an emissive spark.",
+    video: { type: "mp4", src: "/cgai-videos/DefaultRender_A2a.mp4" },
+    extraVideos: [
+      { label: "Creative — Reaching for the Void", type: "mp4", src: "/cgai-videos/CreativeRender_A2a.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "Default render: a torus-plus-box SDF scene lit by classic Phong shading (ambient + diffuse + specular) under a single directional light.",
+          "Creative render: a pedestal (box SDF) with a glowing cyan spark (sphere SDF) rising from it — an emissive material so the spark lights itself instead of relying on the scene light."
+        ]
+      },
+      {
+        heading: "The logic behind it (ray marching an SDF)",
+        bullets: [
+          "Signed Distance Function sdf(p) returns the shortest distance from point p to the surface (negative inside). Primitives: sdfSphere, sdfBox, sdfTorus.",
+          "rayMarch(ro, rd): sphere-trace the ray — each step advances by the SDF value because the SDF is a true distance bound, so it never overshoots the surface. Stops on hit (d < eps) or after max steps / max distance.",
+          "calcNormal(p): estimate the surface normal as the gradient of the SDF via central differences — this is what makes lighting possible.",
+          "Shading: the Phong model combines ambient, diffuse (N·L) and a specular highlight (R·V)^shininess. Emissive sparks add their own color directly to the output, independent of lighting.",
+          "The scene is the union of shapes via min(d1, d2, ...); smooth-min (smin) can blend them for soft transitions."
+        ]
+      }
+    ]
+  },
+
+  "cgai-a2b": {
+    title: "A2b — Neural Implicit Surfaces (SIREN)",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: Neural SDF · SIREN",
+      "Tech: Python (training) · GLSL (inference)"
+    ],
+    roles: ["Neural Networks", "Implicit Representations", "Shader Inference"],
+    intro:
+      "Instead of hard-coding geometry, this assignment trains a SIREN (sinusoidal-activation) neural network to represent the SDF of a 3D mesh, serializes the weights into a GLSL function, and ray-marches the network itself inside the shader. The videos show the bunny/cow reconstruction and a creative 'tangible neural network' with a floating duck.",
+    video: { type: "mp4", src: "/cgai-videos/DefaultRender_A2b.mp4" },
+    extraVideos: [
+      { label: "Creative — A Tangible Neural Network", type: "mp4", src: "/cgai-videos/CreativeRender_A2b.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "Default render: a bunny and a cow whose surfaces are defined by a tiny MLP rather than triangles — the shape emerges from evaluating the network along the ray.",
+          "Creative render: adds a floating rubber duck, staging the neural field as a physical, inspectable object."
+        ]
+      },
+      {
+        heading: "The logic behind it",
+        bullets: [
+          "Training: sample points around the mesh, compute their ground-truth SDF, and fit a SIREN MLP sdfNetwork(x, y, z) -> distance. Sinusoidal activations let the network capture the high-frequency detail of the SDF.",
+          "Export: the trained weights are serialized into a flat array baked into GLSL; the shader calls the network as a function exactly like an analytic SDF.",
+          "Render: rayMarch uses sdfNetwork as the distance estimator and calcNormal uses finite differences of the network — the same marching loop as A2a, but the scene is now a learned function.",
+          "Why it matters: one small network stores an entire shape compactly and enables smooth blending between learned objects — a foundation for neural scene representations."
+        ]
+      }
+    ]
+  },
+
+  "cgai-a3a": {
+    title: "A3a — Volumetric Rendering",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: Volumetric · Participating Media",
+      "Tech: WebGL · GLSL"
+    ],
+    roles: ["Volumetric Rendering", "Noise & Procedural Fields", "Light Transport"],
+    intro:
+      "A fully ray-marched volumetric scene — smoke, flame and participating media — built from 3D noise and physically-inspired scattering. The videos show the baseline candle-like flame and a creative 'Two Worlds' split of warm fire and cool ice.",
+    video: { type: "mp4", src: "/cgai-videos/DefaultRender_A3a.mp4" },
+    extraVideos: [
+      { label: "Creative — Two Worlds", type: "mp4", src: "/cgai-videos/CreativeRender_A3a.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "Default render: a procedurally shaped flame driven by 3D value noise, lit from within with a warm color gradient.",
+          "Creative render: the left half is a warm flame and the right half a cool 'ice' volume, split by a twisting rotation — two scattering media in one field."
+        ]
+      },
+      {
+        heading: "The logic behind it",
+        bullets: [
+          "Volume ray marching: step through a 3D scalar field; at each sample read density sigma(p) from fbm / value noise plus an emission color.",
+          "Transmittance & accumulation: integrate front-to-back; each step attenuates light by exp(-sigma*dt) and adds in-scattered color — classic emission-absorption volume integration.",
+          "Phase function: Henyey-Greenstein g controls forward/backward scattering (g > 0 makes light beams forward like a candle), shaping the soft glow.",
+          "Shape mask: a 2D cookie texture or analytic profile constrains the noise into a recognizable flame silhouette.",
+          "Creative twist: a rotation matrix and a sign-split on world x blend two different color/density fields into one volume."
+        ]
+      }
+    ]
+  },
+
+  "cgai-a3b": {
+    title: "A3b — Neural Radiance Fields (NeRF)",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: Neural Radiance Fields",
+      "Tech: Python (training) · WebGL (viewing)"
+    ],
+    roles: ["Deep Learning", "Volume Rendering", "Novel-View Synthesis"],
+    intro:
+      "A from-scratch tiny NeRF: a multi-layer perceptron maps a 3D point (with positional encoding) and viewing direction to color + volume density, trained on multi-view images, then volume-rendered into novel views. The videos show the lego scene (baseline) and a chair scene (creative), each with a rotating novel-view orbit.",
+    video: { type: "mp4", src: "/cgai-videos/DefaultRender_A3b.mp4" },
+    extraVideos: [
+      { label: "Creative — Chair", type: "mp4", src: "/cgai-videos/CreativeRender_A3b.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "Default render: the classic lego scene reconstructed from ~100 training views, rotating through novel camera angles (PSNR approx 23.3 dB).",
+          "Creative render: a chair scene trained the same way, reaching PSNR approx 23.4 dB."
+        ]
+      },
+      {
+        heading: "The logic behind it",
+        bullets: [
+          "Positional encoding: map (x, y, z) and view direction into a high-frequency basis (sin/cos of scaled frequencies) so the small MLP can represent fine detail.",
+          "Network: (encoded point, direction) -> (rgb, sigma density). A tiny MLP trained with a photometric loss between rendered and target images.",
+          "Differentiable volume rendering: for each ray, sample points, compute transmittance T_i = exp(-sum sigma*dt) and composite color C = sum T_i (1 - exp(-sigma_i*dt_i)) * c_i.",
+          "Novel views: at inference the same network renders any camera pose, including ones never seen during training — that generalization is the core result of NeRF."
+        ]
+      }
+    ]
+  },
+
+  "cgai-a4": {
+    title: "A4 — 2D Gaussian Splatting",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: 2D Gaussian Splatting",
+      "Tech: Python (training) · GLSL (rasterization)"
+    ],
+    roles: ["Differentiable Rendering", "Point-Based Reconstruction", "Real-time Rasterization"],
+    intro:
+      "2D Gaussian Splatting reconstructs a scene from multi-view images as a cloud of anisotropic 2D Gaussians, sorted and alpha-blended in screen space. The '2D GS Fluid' video is the animated splat sequence; the anim-* clips show synthetic (flower) and image-based (cartoon pig) reconstructions at different splat counts.",
+    video: { type: "mp4", src: "/cgai-videos/2D_GS_Fluid.mp4" },
+    extraVideos: [
+      { label: "Synthetic — Flower (N=15)", type: "mp4", src: "/cgai-videos/anim-synthetic.mp4" },
+      { label: "Image-based — Cartoon Pig (N=100)", type: "mp4", src: "/cgai-videos/anim-image.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "2D GS Fluid: the trained splats overlaid / animated in the shader — a fluid-like motion of the reconstructed point cloud.",
+          "anim-synthetic: a simple flower reconstructed from a handful (N=15) of Gaussians.",
+          "anim-image: a cartoon pig reconstructed from N=100 Gaussians, showing how more splats capture finer detail."
+        ]
+      },
+      {
+        heading: "The logic behind it",
+        bullets: [
+          "Each splat = center (mu), 2D covariance Sigma (from scale + rotation), opacity alpha, and color. Covariance is built as Sigma = R S S^T R^T so it stays positive semi-definite.",
+          "Projection: splats are transformed into screen space (Jacobian of the camera) and sorted by depth (painter's algorithm).",
+          "Differentiable blending: final pixel color = sum alpha_i * c_i * T_i with T_i the accumulated transmittance — fully differentiable end to end.",
+          "Training: optimize splat parameters by gradient descent to minimize the image reconstruction error from the multi-view inputs; more splats -> higher fidelity but more overlap."
+        ]
+      }
+    ]
+  },
+
+  "cgai-a5": {
+    title: "A5 — Position-Based Dynamics (XPBD)",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: Extended Position-Based Dynamics",
+      "Tech: WebGL · GLSL solver"
+    ],
+    roles: ["Physics Simulation", "Constraint Solving", "Real-time Animation"],
+    intro:
+      "A real-time XPBD solver: particles are integrated, then constraints (distance springs, collisions) are projected position-by-position with compliance control. The videos show a default rope and a creative octagonal ring ('Dynamic Harmony').",
+    video: { type: "mp4", src: "/cgai-videos/Default_a5.mp4" },
+    extraVideos: [
+      { label: "Creative — Dynamic Harmony (Octagonal Ring)", type: "mp4", src: "/cgai-videos/Creative_a5.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "Default render: a hanging rope of particles connected by distance constraints, swinging under gravity with collision against the floor.",
+          "Creative render: an octagonal ring of particles linked by springs that dynamically settles and oscillates — 'Dynamic Harmony'."
+        ]
+      },
+      {
+        heading: "The logic behind it",
+        bullets: [
+          "Predict: x* = x + v*dt + gravity; then solve constraints by directly moving positions (not forces).",
+          "Constraint projection: for a distance constraint, move the two endpoints along the constraint gradient so their separation matches the rest length; XPBD adds a compliance alpha that converts stiffness into a physically stable, iteration-count-independent parameter.",
+          "Collision: clamp particle positions outside obstacles (e.g. the ground plane / sphere) and feed the correction back into velocity via delta-x / dt.",
+          "Stability: because corrections are positional and bounded, XPBD stays stable at large time steps where force-based solvers explode."
+        ]
+      }
+    ]
+  },
+
+  "cgai-a6": {
+    title: "A6 — Diffusion Models",
+    meta: [
+      "Course: Real-Time Computer Graphics (CGAI)",
+      "Topic: Latent Diffusion · DDIM",
+      "Tech: Python · PyTorch"
+    ],
+    roles: ["Generative Models", "DDPM/DDIM Sampling", "Text-to-Image"],
+    intro:
+      "An implementation of diffusion-based image generation: a U-Net denoiser operating in latent space, conditioned on text, sampled with DDIM for fast deterministic generation. The videos show the default pipeline and a creative 'Mirror Image' prompt.",
+    video: { type: "mp4", src: "/cgai-videos/DefaultRender_a6.mp4" },
+    extraVideos: [
+      { label: "Creative — Mirror Image", type: "mp4", src: "/cgai-videos/CreativeRender_a6.mp4" }
+    ],
+    sections: [
+      {
+        heading: "What the videos show",
+        bullets: [
+          "Default render: the forward/reverse diffusion animation — noise progressively denoised into a coherent image (and the reverse, image to noise).",
+          "Creative render: text prompt 'a person looking at their mirror image' producing a mirrored compositional generation."
+        ]
+      },
+      {
+        heading: "The logic behind it",
+        bullets: [
+          "Forward process: gradually add Gaussian noise to an image over T steps q(x_t | x_{t-1}) until pure noise.",
+          "Reverse process: a U-Net epsilon_theta predicts the noise at each step; we subtract it to recover x_{t-1}. Training minimizes the noise-prediction MSE.",
+          "Latent diffusion: the U-Net runs in a compressed latent space (from an autoencoder), making generation far cheaper; text is encoded by CLIP and cross-attended into the U-Net.",
+          "DDIM sampling: a deterministic, non-Markovian scheduler that reaches good samples in far fewer steps than vanilla DDPM.",
+          "Variants compared: UnCLIP (text to CLIP image embedding to latent), GLIDE (text-conditioned diffusion + upsampling) and Stable Diffusion all build on this shared reverse-diffusion core."
+        ]
+      }
+    ]
+  },
+
+  "research-gaussian": {
+    title: "Research — Dynamic Gaussian World Reconstruction",
+    meta: [
+      "Research",
+      "Topic: Physics-Grounded 3D Gaussian Splatting",
+      "Domain: Dynamic Scene Reconstruction · Fluid Simulation"
+    ],
+    roles: ["3D Gaussian Splatting", "Physics Simulation", "Differentiable Rendering"],
+    intro:
+      "My research builds a dynamic 3D Gaussian world model with physical grounding: fluid (smoke / fire / water) is represented as native Gaussian-splatting content, driven by a fluid simulation so the reconstructed scene contains physically-plausible, temporally-coherent dynamics. It connects the course techniques (2DGS point reconstruction, volumetric fire/smoke) into a unified, simulatable world.",
+    video: { type: "mp4", src: "/cgai-videos/2D_GS_Fluid.mp4" },
+    sections: [
+      {
+        heading: "Research goal",
+        bullets: [
+          "Reconstruct a 3D world as Gaussians, then make parts of it physically alive — especially fluid — rather than replaying baked animations.",
+          "Bridge 3DGS reconstruction with a Navier-Stokes / grid-based fluid solver so splat attributes (position, opacity, color) are advected by the simulation."
+        ]
+      },
+      {
+        heading: "Why it matters / novelty",
+        bullets: [
+          "Most 3DGS dynamic work replays motion; we want simulatable, controllable dynamics grounded in physics (collisions, buoyancy, vorticity).",
+          "Fluid-driven Gaussians (e.g. VortexGaussians-style) let smoke/fire be both photo-real and physically consistent.",
+          "Enables interactive world models: edit a force field and watch the reconstruction respond — useful for simulation, film and embodied-AI training data."
+        ]
+      },
+      {
+        heading: "How it connects to the coursework",
+        bullets: [
+          "A4 (2D Gaussian Splatting) provides the differentiable point-reconstruction backbone.",
+          "A3a (volumetric fire/smoke) provides the scattering/appearance model for the fluid's look.",
+          "A2 (SDF / ray marching) and A5 (XPBD) inform collision and soft-body coupling with the Gaussians."
+        ]
+      }
+    ]
   }
 };
 

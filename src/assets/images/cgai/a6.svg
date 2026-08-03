@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06182a"/>
+      <stop offset="1" stop-color="#0a2850"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.6" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#4c8bff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#4c8bff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+  <g fill="none" stroke="#4c8bff" stroke-opacity="0.3" stroke-width="2">
+    <circle cx="600" cy="150" r="80"/>
+    <circle cx="600" cy="150" r="55"/>
+    <circle cx="600" cy="150" r="30"/>
+  </g>
+  <text x="56" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#a6bfff" letter-spacing="3">ASSIGNMENT A6</text>
+  <text x="56" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Diffusion</text>
+  <text x="56" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Models</text>
+  <text x="56" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#a6b9e6">Latent diffusion &#38; DDIM text-to-image sampling</text>
+  <rect x="56" y="378" width="120" height="6" rx="3" fill="#4c8bff"/>
+</svg>

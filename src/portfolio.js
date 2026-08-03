@@ -374,6 +374,77 @@ const twitterDetails = {
   display: false
 };
 
+const cgaiProjects = {
+  title: "CGAI — Real-Time Computer Graphics Coursework",
+  subtitle:
+    "SEVEN ASSIGNMENTS — SDF · VOLUMETRICS · NERF · GAUSSIAN SPLATTING · PHYSICS · DIFFUSION",
+  projects: [
+    {
+      image: require("./assets/images/cgai/a2a.svg"),
+      projectName: "A2a · SDF & Ray Marching",
+      projectDesc:
+        "Analytic signed-distance fields sphere-traced in a GLSL fragment shader, shaded with Phong lighting.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a2a" }
+    },
+    {
+      image: require("./assets/images/cgai/a2b.svg"),
+      projectName: "A2b · Neural Implicit Surfaces (SIREN)",
+      projectDesc:
+        "A SIREN MLP learns a mesh SDF, is serialized into GLSL, and ray-marched as a neural surface.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a2b" }
+    },
+    {
+      image: require("./assets/images/cgai/a3a.svg"),
+      projectName: "A3a · Volumetric Rendering",
+      projectDesc:
+        "Ray-marched smoke and flame built from 3D noise with Henyey-Greenstein scattering.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a3a" }
+    },
+    {
+      image: require("./assets/images/cgai/a3b.svg"),
+      projectName: "A3b · Neural Radiance Fields",
+      projectDesc:
+        "A tiny MLP with positional encoding and differentiable volume rendering synthesizes novel views.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a3b" }
+    },
+    {
+      image: require("./assets/images/cgai/a4.svg"),
+      projectName: "A4 · 2D Gaussian Splatting",
+      projectDesc:
+        "Scenes reconstructed as anisotropic 2D Gaussians, sorted and alpha-blended in screen space.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a4" }
+    },
+    {
+      image: require("./assets/images/cgai/a5.svg"),
+      projectName: "A5 · Position-Based Dynamics (XPBD)",
+      projectDesc:
+        "An XPBD constraint solver simulates ropes and rings with stable, compliant real-time physics.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a5" }
+    },
+    {
+      image: require("./assets/images/cgai/a6.svg"),
+      projectName: "A6 · Diffusion Models",
+      projectDesc:
+        "Latent-diffusion / DDIM text-to-image generation with a U-Net denoiser conditioned on text.",
+      footerLink: { name: "Watch & Details", url: "#/project/cgai-a6" }
+    }
+  ]
+};
+
+const researchProjects = {
+  title: "Research — Dynamic Gaussian World Reconstruction",
+  subtitle: "PHYSICS-GROUNDED 3D GAUSSIAN SPLATTING · FLUID-DRIVEN DYNAMICS",
+  projects: [
+    {
+      image: require("./assets/images/cgai/research.svg"),
+      projectName: "Dynamic Gaussian World",
+      projectDesc:
+        "A simulatable 3D Gaussian world where fluid is driven by physics, building on the CGAI techniques.",
+      footerLink: { name: "Read Research", url: "#/project/research-gaussian" }
+    }
+  ]
+};
+
 const isHireable = true;
 
 export {
@@ -388,6 +459,8 @@ export {
   openSource,
   bigProjects,
   appProjects,
+  cgaiProjects,
+  researchProjects,
   achievementSection,
   blogSection,
   talkSection,

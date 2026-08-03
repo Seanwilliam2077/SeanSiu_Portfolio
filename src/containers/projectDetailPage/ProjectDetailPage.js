@@ -30,9 +30,23 @@ function Video({video}) {
   }
   return (
     <div className="detail-video-wrapper detail-video-native">
-      <video src={video.src} controls preload="metadata"></video>
+      <video
+        src={resolveSrc(video.src)}
+        controls
+        preload="metadata"
+      ></video>
     </div>
   );
+}
+
+// Resolve local (repo-hosted) asset paths against PUBLIC_URL so they work on
+// GitHub Pages project sites served from a sub-path (e.g. /SeanSiu_Portfolio).
+function resolveSrc(src) {
+  if (!src) return src;
+  if (src.startsWith("/") && typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
+    return process.env.PUBLIC_URL.replace(/\/$/, "") + src;
+  }
+  return src;
 }
 
 export default function ProjectDetailPage({slug}) {
