@@ -39,14 +39,25 @@ function Video({video}) {
   );
 }
 
-// Resolve local (repo-hosted) asset paths against PUBLIC_URL so they work on
-// GitHub Pages project sites served from a sub-path (e.g. /SeanSiu_Portfolio).
+// Resolve local (repo-hosted) asset paths against the site's base path so they
+// work on GitHub Pages project sites served from a sub-path (e.g.
+// /SeanSiu_Portfolio). CRA fills PUBLIC_URL in production builds but leaves it
+// empty in development, where the dev server still serves under the homepage
+// path — so fall back to the first path segment.
+function publicBase() {
+  const fromEnv =
+    (typeof process !== "undefined" &&
+      process.env &&
+      process.env.PUBLIC_URL) ||
+    "";
+  if (fromEnv) return fromEnv.replace(/\/$/, "");
+  const segment = window.location.pathname.split("/").filter(Boolean)[0];
+  return segment ? `/${segment}` : "";
+}
+
 function resolveSrc(src) {
-  if (!src) return src;
-  if (src.startsWith("/") && typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
-    return process.env.PUBLIC_URL.replace(/\/$/, "") + src;
-  }
-  return src;
+  if (!src || !src.startsWith("/")) return src;
+  return publicBase() + src;
 }
 
 export default function ProjectDetailPage({slug}) {

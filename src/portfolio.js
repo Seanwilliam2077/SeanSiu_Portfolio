@@ -108,7 +108,7 @@ const workExperiences = {
   experience: [
     {
       company: "Tencent",
-      companylogo: require("./assets/images/tencent.jpg"),
+      companylogo: require("./assets/images/tencent.png"),
       date: "Dec 2025 - Present",
       descBullets: [
         "Domestic Publishing · Ecosystem Development Dept · Pre-research Team",
@@ -117,7 +117,7 @@ const workExperiences = {
     },
     {
       company: "Seasun (Kingsoft)",
-      companylogo: require("./assets/images/seasun.jpg"),
+      companylogo: require("./assets/images/seasun.png"),
       date: "Jul 2023 - Dec 2023",
       descBullets: [
         "JX3 (Sword Net 3) · Engine Dev Dept · QA Pipeline Team"
@@ -380,55 +380,56 @@ const cgaiProjects = {
     "SEVEN ASSIGNMENTS — SDF · VOLUMETRICS · NERF · GAUSSIAN SPLATTING · PHYSICS · DIFFUSION",
   projects: [
     {
-      image: require("./assets/images/cgai/a2a.svg"),
+      image: require("./assets/images/cgai/a2a.svg").default,
       projectName: "A2a · SDF & Ray Marching",
       projectDesc:
         "Analytic signed-distance fields sphere-traced in a GLSL fragment shader, shaded with Phong lighting.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a2a" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a2a"}]
     },
     {
-      image: require("./assets/images/cgai/a2b.svg"),
+      image: require("./assets/images/cgai/a2b.svg").default,
       projectName: "A2b · Neural Implicit Surfaces (SIREN)",
       projectDesc:
         "A SIREN MLP learns a mesh SDF, is serialized into GLSL, and ray-marched as a neural surface.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a2b" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a2b"}]
     },
     {
-      image: require("./assets/images/cgai/a3a.svg"),
+      image: require("./assets/images/cgai/a3a.svg").default,
       projectName: "A3a · Volumetric Rendering",
       projectDesc:
         "Ray-marched smoke and flame built from 3D noise with Henyey-Greenstein scattering.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a3a" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a3a"}]
     },
     {
-      image: require("./assets/images/cgai/a3b.svg"),
+      image: require("./assets/images/cgai/a3b.svg").default,
       projectName: "A3b · Neural Radiance Fields",
       projectDesc:
         "A tiny MLP with positional encoding and differentiable volume rendering synthesizes novel views.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a3b" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a3b"}]
     },
     {
-      image: require("./assets/images/cgai/a4.svg"),
+      image: require("./assets/images/cgai/a4.svg").default,
       projectName: "A4 · 2D Gaussian Splatting",
       projectDesc:
         "Scenes reconstructed as anisotropic 2D Gaussians, sorted and alpha-blended in screen space.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a4" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a4"}]
     },
     {
-      image: require("./assets/images/cgai/a5.svg"),
+      image: require("./assets/images/cgai/a5.svg").default,
       projectName: "A5 · Position-Based Dynamics (XPBD)",
       projectDesc:
         "An XPBD constraint solver simulates ropes and rings with stable, compliant real-time physics.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a5" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a5"}]
     },
     {
-      image: require("./assets/images/cgai/a6.svg"),
+      image: require("./assets/images/cgai/a6.svg").default,
       projectName: "A6 · Diffusion Models",
       projectDesc:
         "Latent-diffusion / DDIM text-to-image generation with a U-Net denoiser conditioned on text.",
-      footerLink: { name: "Watch & Details", url: "#/project/cgai-a6" }
+      footerLink: [{name: "Watch & Details", url: "#/project/cgai-a6"}]
     }
-  ]
+  ],
+  display: true
 };
 
 const researchProjects = {
@@ -436,13 +437,14 @@ const researchProjects = {
   subtitle: "PHYSICS-GROUNDED 3D GAUSSIAN SPLATTING · FLUID-DRIVEN DYNAMICS",
   projects: [
     {
-      image: require("./assets/images/cgai/research.svg"),
+      image: require("./assets/images/cgai/research.svg").default,
       projectName: "Dynamic Gaussian World",
       projectDesc:
         "A simulatable 3D Gaussian world where fluid is driven by physics, building on the CGAI techniques.",
-      footerLink: { name: "Read Research", url: "#/project/research-gaussian" }
+      footerLink: [{name: "Read Research", url: "#/project/research-gaussian"}]
     }
-  ]
+  ],
+  display: true
 };
 
 const isHireable = true;
