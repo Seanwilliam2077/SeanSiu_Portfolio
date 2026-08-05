@@ -56,7 +56,6 @@ const skillsSection = {
       skillName: "Python",
       logo: require("./assets/images/tech/python.svg").default
     },
-    {skillName: "HLSL", fontAwesomeClassname: "fas fa-paint-brush"},
     {skillName: "CUDA", logo: require("./assets/images/tech/nvidia.svg").default},
     {
       skillName: "Vulkan",
@@ -85,12 +84,6 @@ const skillsSection = {
     {
       skillName: "Blender",
       logo: require("./assets/images/tech/blender.svg").default
-    },
-    {skillName: "Substance", fontAwesomeClassname: "fas fa-palette"},
-    {skillName: "RenderDoc", fontAwesomeClassname: "fas fa-chart-line"},
-    {
-      skillName: "3DGS · PCG · Agents",
-      fontAwesomeClassname: "fas fa-project-diagram"
     }
   ],
   display: true
