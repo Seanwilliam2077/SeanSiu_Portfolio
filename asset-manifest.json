@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SeanSiu_Portfolio/static/css/main.76ede94f.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.def3d31e.js",
+    "main.css": "/SeanSiu_Portfolio/static/css/main.fcce4772.css",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.7eb4940c.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -25,17 +25,28 @@
     "static/media/developerActivity.svg": "/SeanSiu_Portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/seasun.png": "/SeanSiu_Portfolio/static/media/seasun.df95b82f34a9174bfe76.png",
     "static/media/skill.svg": "/SeanSiu_Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/vulkan.svg": "/SeanSiu_Portfolio/static/media/vulkan.4aeb14d1a3c925b5c8dba4cad5ecfdc1.svg",
     "index.html": "/SeanSiu_Portfolio/index.html",
+    "static/media/python.svg": "/SeanSiu_Portfolio/static/media/python.cd1e1de5623bcbd8c00476be7777946f.svg",
+    "static/media/blender.svg": "/SeanSiu_Portfolio/static/media/blender.c31b246925b0a869b9e544087f5bf487.svg",
+    "static/media/nvidia.svg": "/SeanSiu_Portfolio/static/media/nvidia.3d77f02f8c6410f8f417b8df7d6613ef.svg",
+    "static/media/csharp.svg": "/SeanSiu_Portfolio/static/media/csharp.4b8080ff785d7bd4f1b95178568e9ba1.svg",
+    "static/media/unrealengine.svg": "/SeanSiu_Portfolio/static/media/unrealengine.4a3e1c489d75685749ee2cbbbcc48aa1.svg",
+    "static/media/cplusplus.svg": "/SeanSiu_Portfolio/static/media/cplusplus.2677c41ba8461246b9578d56fc174579.svg",
+    "static/media/autodeskmaya.svg": "/SeanSiu_Portfolio/static/media/autodeskmaya.fd4ac721cabefa9164cf47beb1cf94bc.svg",
+    "static/media/houdini.svg": "/SeanSiu_Portfolio/static/media/houdini.cd80e5c0429a4cba86559336431afe1b.svg",
+    "static/media/unity.svg": "/SeanSiu_Portfolio/static/media/unity.cdb3e59d38daa10895b3600042fcdfdb.svg",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.76ede94f.css.map": "/SeanSiu_Portfolio/static/css/main.76ede94f.css.map",
-    "main.def3d31e.js.map": "/SeanSiu_Portfolio/static/js/main.def3d31e.js.map",
+    "static/media/pytorch.svg": "/SeanSiu_Portfolio/static/media/pytorch.972a9974aedd5b2ae8418536d635c9d2.svg",
+    "main.fcce4772.css.map": "/SeanSiu_Portfolio/static/css/main.fcce4772.css.map",
+    "main.7eb4940c.js.map": "/SeanSiu_Portfolio/static/js/main.7eb4940c.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/SeanSiu_Portfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ede94f.css",
-    "static/js/main.def3d31e.js"
+    "static/css/main.fcce4772.css",
+    "static/js/main.7eb4940c.js"
   ]
 }
