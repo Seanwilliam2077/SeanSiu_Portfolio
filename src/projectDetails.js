@@ -517,10 +517,10 @@ const projectDetails = {
     ].map(wix)
   },
 
-  "cgai-a2a": {
-    title: "A2a — Signed Distance Fields & Ray Marching",
+  "sdf-ray-marching": {
+    title: "Signed Distance Fields & Ray Marching",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: SDF · Ray Marching",
       "Tech: WebGL · GLSL fragment shader"
     ],
@@ -552,16 +552,16 @@ const projectDetails = {
     ]
   },
 
-  "cgai-a2b": {
-    title: "A2b — Neural Implicit Surfaces (SIREN)",
+  "neural-implicit-surfaces": {
+    title: "Neural Implicit Surfaces (SIREN)",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: Neural SDF · SIREN",
       "Tech: Python (training) · GLSL (inference)"
     ],
     roles: ["Neural Networks", "Implicit Representations", "Shader Inference"],
     intro:
-      "Instead of hard-coding geometry, this assignment trains a SIREN (sinusoidal-activation) neural network to represent the SDF of a 3D mesh, serializes the weights into a GLSL function, and ray-marches the network itself inside the shader. The videos show the bunny/cow reconstruction and a creative 'tangible neural network' with a floating duck.",
+      "Instead of hard-coding geometry, this experiment trains a SIREN (sinusoidal-activation) neural network to represent the SDF of a 3D mesh, serializes the weights into a GLSL function, and ray-marches the network itself inside the shader. The videos show the bunny/cow reconstruction and a creative 'tangible neural network' with a floating duck.",
     video: { type: "mp4", src: "/cgai-videos/DefaultRender_A2b.mp4" },
     extraVideos: [
       { label: "Creative — A Tangible Neural Network", type: "mp4", src: "/cgai-videos/CreativeRender_A2b.mp4" }
@@ -579,17 +579,17 @@ const projectDetails = {
         bullets: [
           "Training: sample points around the mesh, compute their ground-truth SDF, and fit a SIREN MLP sdfNetwork(x, y, z) -> distance. Sinusoidal activations let the network capture the high-frequency detail of the SDF.",
           "Export: the trained weights are serialized into a flat array baked into GLSL; the shader calls the network as a function exactly like an analytic SDF.",
-          "Render: rayMarch uses sdfNetwork as the distance estimator and calcNormal uses finite differences of the network — the same marching loop as A2a, but the scene is now a learned function.",
+          "Render: rayMarch uses sdfNetwork as the distance estimator and calcNormal uses finite differences of the network — the same marching loop as the analytic SDF scene, but the scene is now a learned function.",
           "Why it matters: one small network stores an entire shape compactly and enables smooth blending between learned objects — a foundation for neural scene representations."
         ]
       }
     ]
   },
 
-  "cgai-a3a": {
-    title: "A3a — Volumetric Rendering",
+  "volumetric-rendering": {
+    title: "Volumetric Rendering",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: Volumetric · Participating Media",
       "Tech: WebGL · GLSL"
     ],
@@ -621,10 +621,10 @@ const projectDetails = {
     ]
   },
 
-  "cgai-a3b": {
-    title: "A3b — Neural Radiance Fields (NeRF)",
+  "nerf": {
+    title: "Neural Radiance Fields (NeRF)",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: Neural Radiance Fields",
       "Tech: Python (training) · WebGL (viewing)"
     ],
@@ -655,10 +655,10 @@ const projectDetails = {
     ]
   },
 
-  "cgai-a4": {
-    title: "A4 — 2D Gaussian Splatting",
+  "gaussian-splatting-2d": {
+    title: "2D Gaussian Splatting",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: 2D Gaussian Splatting",
       "Tech: Python (training) · GLSL (rasterization)"
     ],
@@ -691,10 +691,10 @@ const projectDetails = {
     ]
   },
 
-  "cgai-a5": {
-    title: "A5 — Position-Based Dynamics (XPBD)",
+  "xpbd-physics": {
+    title: "Position-Based Dynamics (XPBD)",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: Extended Position-Based Dynamics",
       "Tech: WebGL · GLSL solver"
     ],
@@ -725,10 +725,10 @@ const projectDetails = {
     ]
   },
 
-  "cgai-a6": {
-    title: "A6 — Diffusion Models",
+  "diffusion-models": {
+    title: "Diffusion Models",
     meta: [
-      "Course: Real-Time Computer Graphics (CGAI)",
+      "Type: Technical Exploration",
       "Topic: Latent Diffusion · DDIM",
       "Tech: Python · PyTorch"
     ],
@@ -788,11 +788,11 @@ const projectDetails = {
         ]
       },
       {
-        heading: "How it connects to the coursework",
+        heading: "How it connects to these explorations",
         bullets: [
-          "A4 (2D Gaussian Splatting) provides the differentiable point-reconstruction backbone.",
-          "A3a (volumetric fire/smoke) provides the scattering/appearance model for the fluid's look.",
-          "A2 (SDF / ray marching) and A5 (XPBD) inform collision and soft-body coupling with the Gaussians."
+          "The 2D Gaussian Splatting work provides the differentiable point-reconstruction backbone.",
+          "The volumetric fire/smoke work provides the scattering/appearance model for the fluid's look.",
+          "SDF / ray marching and XPBD inform collision and soft-body coupling with the Gaussians."
         ]
       }
     ]

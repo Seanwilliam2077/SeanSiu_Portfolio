@@ -59,7 +59,7 @@ const Main = () => {
             <Projects />
             <StartupProject />
             <StartupProject data={appProjects} sectionId="apps" />
-            <StartupProject data={cgaiProjects} sectionId="cgai" />
+            <StartupProject data={cgaiProjects} sectionId="graphics-tech" />
             <StartupProject data={researchProjects} sectionId="research" />
             <Achievement />
             <Blogs />
