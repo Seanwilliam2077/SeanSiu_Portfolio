@@ -380,49 +380,42 @@ const cgaiProjects = {
     "REAL-TIME RENDERING SHOWREEL — SDF · VOLUMETRICS · NERF · GAUSSIAN SPLATTING · PHYSICS · DIFFUSION",
   projects: [
     {
-      image: require("./assets/images/cgai/a2a.svg").default,
       projectName: "SDF & Ray Marching",
       projectDesc:
         "Analytic signed-distance fields sphere-traced in a GLSL fragment shader, shaded with Phong lighting.",
       footerLink: [{name: "Watch & Details", url: "#/project/sdf-ray-marching"}]
     },
     {
-      image: require("./assets/images/cgai/a2b.svg").default,
       projectName: "Neural Implicit Surfaces (SIREN)",
       projectDesc:
         "A SIREN MLP learns a mesh SDF, is serialized into GLSL, and ray-marched as a neural surface.",
       footerLink: [{name: "Watch & Details", url: "#/project/neural-implicit-surfaces"}]
     },
     {
-      image: require("./assets/images/cgai/a3a.svg").default,
       projectName: "Volumetric Rendering",
       projectDesc:
         "Ray-marched smoke and flame built from 3D noise with Henyey-Greenstein scattering.",
       footerLink: [{name: "Watch & Details", url: "#/project/volumetric-rendering"}]
     },
     {
-      image: require("./assets/images/cgai/a3b.svg").default,
       projectName: "Neural Radiance Fields",
       projectDesc:
         "A tiny MLP with positional encoding and differentiable volume rendering synthesizes novel views.",
       footerLink: [{name: "Watch & Details", url: "#/project/nerf"}]
     },
     {
-      image: require("./assets/images/cgai/a4.svg").default,
       projectName: "2D Gaussian Splatting",
       projectDesc:
         "Scenes reconstructed as anisotropic 2D Gaussians, sorted and alpha-blended in screen space.",
       footerLink: [{name: "Watch & Details", url: "#/project/gaussian-splatting-2d"}]
     },
     {
-      image: require("./assets/images/cgai/a5.svg").default,
       projectName: "Position-Based Dynamics (XPBD)",
       projectDesc:
         "An XPBD constraint solver simulates ropes and rings with stable, compliant real-time physics.",
       footerLink: [{name: "Watch & Details", url: "#/project/xpbd-physics"}]
     },
     {
-      image: require("./assets/images/cgai/a6.svg").default,
       projectName: "Diffusion Models",
       projectDesc:
         "Latent-diffusion / DDIM text-to-image generation with a U-Net denoiser conditioned on text.",
