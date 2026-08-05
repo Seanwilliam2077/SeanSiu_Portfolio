@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SeanSiu_Portfolio/static/css/main.76ede94f.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.a749f169.js",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.def3d31e.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -19,7 +19,6 @@
     "static/media/characterArt.jpg": "/SeanSiu_Portfolio/static/media/characterArt.f87e9cb4eb3900322219.jpg",
     "static/media/rpgParkour.png": "/SeanSiu_Portfolio/static/media/rpgParkour.e19dac0f72e50b60332c.png",
     "static/media/Agustina.woff": "/SeanSiu_Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/vortexGaussians.jpg": "/SeanSiu_Portfolio/static/media/vortexGaussians.28dc52aaf5dece149ef8.jpg",
     "static/media/tencent.png": "/SeanSiu_Portfolio/static/media/tencent.ea3dd5c596b1539d6c0d.png",
     "static/media/manOnTable.svg": "/SeanSiu_Portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/contactMailDark.svg": "/SeanSiu_Portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
@@ -27,10 +26,9 @@
     "static/media/seasun.png": "/SeanSiu_Portfolio/static/media/seasun.df95b82f34a9174bfe76.png",
     "static/media/skill.svg": "/SeanSiu_Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/SeanSiu_Portfolio/index.html",
-    "static/media/research.svg": "/SeanSiu_Portfolio/static/media/research.969eae6d458f63685225f481df3a32f0.svg",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.76ede94f.css.map": "/SeanSiu_Portfolio/static/css/main.76ede94f.css.map",
-    "main.a749f169.js.map": "/SeanSiu_Portfolio/static/js/main.a749f169.js.map",
+    "main.def3d31e.js.map": "/SeanSiu_Portfolio/static/js/main.def3d31e.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
@@ -38,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.76ede94f.css",
-    "static/js/main.a749f169.js"
+    "static/js/main.def3d31e.js"
   ]
 }
