@@ -16,7 +16,7 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen, appProjects, cgaiProjects, researchProjects} from "../portfolio";
+import {splashScreen, appProjects, cgaiProjects} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
@@ -60,7 +60,6 @@ const Main = () => {
             <StartupProject />
             <StartupProject data={appProjects} sectionId="apps" />
             <StartupProject data={cgaiProjects} sectionId="graphics-tech" />
-            <StartupProject data={researchProjects} sectionId="research" />
             <Achievement />
             <Blogs />
             <Talks />

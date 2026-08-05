@@ -830,44 +830,6 @@ const projectDetails = {
         ]
       }
     ]
-  },
-
-  "research-gaussian": {
-    title: "Research — Dynamic Gaussian World Reconstruction",
-    meta: [
-      "Research",
-      "Topic: Physics-Grounded 3D Gaussian Splatting",
-      "Domain: Dynamic Scene Reconstruction · Fluid Simulation"
-    ],
-    roles: ["3D Gaussian Splatting", "Physics Simulation", "Differentiable Rendering"],
-    intro:
-      "My research builds a dynamic 3D Gaussian world model with physical grounding: fluid (smoke / fire / water) is represented as native Gaussian-splatting content, driven by a fluid simulation so the reconstructed scene contains physically-plausible, temporally-coherent dynamics. It connects the course techniques (2DGS point reconstruction, volumetric fire/smoke) into a unified, simulatable world.",
-    video: { type: "mp4", src: "/cgai-videos/2D_GS_Fluid.mp4" },
-    sections: [
-      {
-        heading: "Research goal",
-        bullets: [
-          "Reconstruct a 3D world as Gaussians, then make parts of it physically alive — especially fluid — rather than replaying baked animations.",
-          "Bridge 3DGS reconstruction with a Navier-Stokes / grid-based fluid solver so splat attributes (position, opacity, color) are advected by the simulation."
-        ]
-      },
-      {
-        heading: "Why it matters / novelty",
-        bullets: [
-          "Most 3DGS dynamic work replays motion; we want simulatable, controllable dynamics grounded in physics (collisions, buoyancy, vorticity).",
-          "Fluid-driven Gaussians (e.g. VortexGaussians-style) let smoke/fire be both photo-real and physically consistent.",
-          "Enables interactive world models: edit a force field and watch the reconstruction respond — useful for simulation, film and embodied-AI training data."
-        ]
-      },
-      {
-        heading: "How it connects to these explorations",
-        bullets: [
-          "The 2D Gaussian Splatting work provides the differentiable point-reconstruction backbone.",
-          "The volumetric fire/smoke work provides the scattering/appearance model for the fluid's look.",
-          "SDF / ray marching and XPBD inform collision and soft-body coupling with the Gaussians."
-        ]
-      }
-    ]
   }
 };
 

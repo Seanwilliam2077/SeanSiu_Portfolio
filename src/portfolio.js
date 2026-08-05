@@ -410,32 +410,11 @@ const cgaiProjects = {
       footerLink: [{name: "Watch & Details", url: "#/project/gaussian-splatting-2d"}]
     },
     {
-      projectName: "Position-Based Dynamics (XPBD)",
-      projectDesc:
-        "An XPBD constraint solver simulates ropes and rings with stable, compliant real-time physics.",
-      footerLink: [{name: "Watch & Details", url: "#/project/xpbd-physics"}]
-    },
-    {
-      projectName: "Diffusion Models",
-      projectDesc:
-        "Latent-diffusion / DDIM text-to-image generation with a U-Net denoiser conditioned on text.",
-      footerLink: [{name: "Watch & Details", url: "#/project/diffusion-models"}]
-    }
-  ],
-  display: true
-};
-
-const researchProjects = {
-  title: "Research — Dynamic Gaussian World Reconstruction",
-  subtitle: "PHYSICS-GROUNDED 3D GAUSSIAN SPLATTING · FLUID-DRIVEN DYNAMICS",
-  projects: [
-    {
-      image: require("./assets/images/vortexGaussians.jpg"),
       projectName: "Vortex Gaussians",
       projectDesc:
-        "The first system to generate fire and smoke by forward physical simulation in real time and render them as native Gaussian-splatting content. Lagrangian vortex particles and 3D Gaussians are treated as the same point primitive — no voxelization, meshing or simulation-to-renderer conversion — so flames share one depth order and one emission-absorption blend state with a reconstructed 3DGS scene and occlude it correctly. 8.9 ms/frame (112 FPS) in a single-file WebGL2 prototype.",
+        "The first system to generate fire and smoke by forward physical simulation in real time and render them as native Gaussian-splatting content. Vortex particles and 3D Gaussians are the same point primitive — no voxelization, meshing or simulation-to-renderer conversion — so flames share one depth order with a reconstructed 3DGS scene and occlude it correctly. 8.9 ms/frame (112 FPS) in a single-file WebGL2 prototype.",
       footerLink: [
-        {name: "Read More", url: "#/project/vortex-gaussians"},
+        {name: "Watch & Details", url: "#/project/vortex-gaussians"},
         {
           name: "Live Demo",
           url: "https://seanwilliam2077.github.io/VortexGaussians/"
@@ -447,11 +426,16 @@ const researchProjects = {
       ]
     },
     {
-      image: require("./assets/images/cgai/research.svg").default,
-      projectName: "Dynamic Gaussian World",
+      projectName: "Position-Based Dynamics (XPBD)",
       projectDesc:
-        "A simulatable 3D Gaussian world where fluid is driven by physics, building on the CGAI techniques.",
-      footerLink: [{name: "Read Research", url: "#/project/research-gaussian"}]
+        "An XPBD constraint solver simulates ropes and rings with stable, compliant real-time physics.",
+      footerLink: [{name: "Watch & Details", url: "#/project/xpbd-physics"}]
+    },
+    {
+      projectName: "Diffusion Models",
+      projectDesc:
+        "Latent-diffusion / DDIM text-to-image generation with a U-Net denoiser conditioned on text.",
+      footerLink: [{name: "Watch & Details", url: "#/project/diffusion-models"}]
     }
   ],
   display: true
@@ -472,7 +456,6 @@ export {
   bigProjects,
   appProjects,
   cgaiProjects,
-  researchProjects,
   achievementSection,
   blogSection,
   talkSection,
