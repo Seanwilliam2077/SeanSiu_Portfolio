@@ -19,6 +19,20 @@
   color: $subTitle;
 }
 
+/* Official brand logos render as images, sized to match the icon font. */
+.software-skill-inline > .software-skill-logo {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin: 0 auto;
+  transition: transform 0.2s ease-in;
+}
+
+.software-skill-inline > .software-skill-logo:hover {
+  transform: scale(1.1);
+}
+
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }

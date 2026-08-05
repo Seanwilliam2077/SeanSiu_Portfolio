@@ -35,9 +35,9 @@ const skillsSection = {
   title: "Technical Art & Graphics",
   subTitle: "REAL-TIME RENDERING · PCG / AGENT PIPELINES · NEURAL RENDERING · DCC AUTOMATION",
   skills: [
-    emoji("⚡ Programming Languages: C++, C#, Python, Java and HLSL"),
+    emoji("⚡ Programming Languages: C++, C#, Python, HLSL and CUDA"),
     emoji(
-      "⚡ Engines & Tools: Unreal Engine 5, Unity, Houdini, Maya, Blender, Substance Painter/Designer and RenderDoc"
+      "⚡ Engines & Tools: Unreal Engine 5, Unity, Vulkan, PyTorch, Houdini, Maya, Blender, Substance Painter/Designer and RenderDoc"
     ),
     emoji(
       "⚡ Core TA Domains: custom rendering pipelines, performance profiling, memory management, complex materials and shaders, procedural animation (IK), 3DGS and PCG / Agent automation"
@@ -47,19 +47,51 @@ const skillsSection = {
     )
   ],
   softwareSkills: [
-    {skillName: "C++", fontAwesomeClassname: "fas fa-code"},
-    {skillName: "C#", fontAwesomeClassname: "fas fa-laptop-code"},
-    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
-    {skillName: "Java", fontAwesomeClassname: "fab fa-java"},
+    {
+      skillName: "C++",
+      logo: require("./assets/images/tech/cplusplus.svg").default
+    },
+    {skillName: "C#", logo: require("./assets/images/tech/csharp.svg").default},
+    {
+      skillName: "Python",
+      logo: require("./assets/images/tech/python.svg").default
+    },
     {skillName: "HLSL", fontAwesomeClassname: "fas fa-paint-brush"},
-    {skillName: "Unreal Engine 5", fontAwesomeClassname: "fas fa-gamepad"},
-    {skillName: "Unity", fontAwesomeClassname: "fab fa-unity"},
-    {skillName: "Houdini", fontAwesomeClassname: "fas fa-draw-polygon"},
-    {skillName: "Maya", fontAwesomeClassname: "fas fa-cubes"},
-    {skillName: "Blender", fontAwesomeClassname: "fas fa-cube"},
+    {skillName: "CUDA", logo: require("./assets/images/tech/nvidia.svg").default},
+    {
+      skillName: "Vulkan",
+      logo: require("./assets/images/tech/vulkan.svg").default
+    },
+    {
+      skillName: "PyTorch",
+      logo: require("./assets/images/tech/pytorch.svg").default
+    },
+    {
+      skillName: "Unreal Engine 5",
+      logo: require("./assets/images/tech/unrealengine.svg").default
+    },
+    {
+      skillName: "Unity",
+      logo: require("./assets/images/tech/unity.svg").default
+    },
+    {
+      skillName: "Houdini",
+      logo: require("./assets/images/tech/houdini.svg").default
+    },
+    {
+      skillName: "Maya",
+      logo: require("./assets/images/tech/autodeskmaya.svg").default
+    },
+    {
+      skillName: "Blender",
+      logo: require("./assets/images/tech/blender.svg").default
+    },
     {skillName: "Substance", fontAwesomeClassname: "fas fa-palette"},
     {skillName: "RenderDoc", fontAwesomeClassname: "fas fa-chart-line"},
-    {skillName: "3DGS · PCG · Agents", fontAwesomeClassname: "fas fa-project-diagram"}
+    {
+      skillName: "3DGS · PCG · Agents",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    }
   ],
   display: true
 };
