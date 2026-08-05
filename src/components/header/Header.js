@@ -13,6 +13,7 @@ import {
   achievementSection,
   bigProjects,
   appProjects,
+  cgaiProjects,
   resumeSection
 } from "../../portfolio";
 
@@ -68,6 +69,11 @@ function Header() {
           {viewAppProjects && (
             <li>
               <a href="#apps">App Projects</a>
+            </li>
+          )}
+          {cgaiProjects.display && (
+            <li>
+              <a href="#graphics-tech">Graphics Tech</a>
             </li>
           )}
           {viewAchievement && (

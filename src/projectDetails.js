@@ -407,6 +407,78 @@ const projectDetails = {
     ]
   },
 
+  "vortex-gaussians": {
+    title: "Vortex Gaussians",
+    meta: [
+      "Type: Research System",
+      "Topic: 3D Gaussian Splatting · Fluid Simulation",
+      "Tech: WebGL2 · GLSL · single-file prototype",
+      "Performance: 8.9 ms/frame (112 FPS)",
+      "Status: Preprint under review"
+    ],
+    roles: [
+      "Real-Time Rendering",
+      "Physical Simulation",
+      "Differentiable/Point-Based Graphics",
+      "Systems & Benchmarking"
+    ],
+    intro:
+      "Fire and smoke have been missing from Gaussian-splatting scenes: physics-integrated GS handles solids and liquids, GS fire methods only reconstruct flames that were filmed, and the one system that simulates new fire ray-marches volumes over an opaque backdrop at seconds per frame. Vortex Gaussians is the first system to generate fire and smoke by forward physical simulation in real time and render them as native Gaussian-splatting content.",
+    video: {
+      type: "mp4",
+      src: "/research-videos/vortex_gaussians_supplemental.mp4"
+    },
+    externalLinks: [
+      {
+        name: "Live Demo & Project Page",
+        url: "https://seanwilliam2077.github.io/VortexGaussians/"
+      },
+      {name: "Code", url: "https://github.com/Seanwilliam2077/VortexGaussians"}
+    ],
+    sections: [
+      {
+        heading: "Key insight — one particle set, zero conversion",
+        body:
+          "Lagrangian vortex particles and 3D Gaussians are the same class of point primitive. A single particle set serves simultaneously as simulation state and render primitive: position becomes the Gaussian mean, temperature becomes emissive blackbody color, density becomes opacity, and the velocity gradient becomes the anisotropic covariance. There is no voxelization, no meshing and no simulation-to-renderer conversion anywhere in the pipeline."
+      },
+      {
+        heading: "Simulation — pressure-free layered vortex-in-cell",
+        bullets: [
+          "A coarse global vortex solver drives N per-slice 2D vortex-in-cell simulations in a two-level, pressure-free formulation.",
+          "A new bidirectional inter-slice vorticity-coupling operator exchanges vorticity across adjacent slices, restoring the out-of-plane transport that naive 2D stacking discards.",
+          "Interactive control at runtime: in-scene ignition, wind and coupling strength."
+        ]
+      },
+      {
+        heading: "Rendering — correct mutual occlusion",
+        body:
+          "One depth-sorted emission-absorption rasterizer composites flame, smoke, embers and reconstructed 3DGS scenes together. Because the fire's Gaussians share one global depth order and one blend state with the environment, a foreground scene object correctly occludes the flame and the flame occludes the scene behind it — instead of being composited over an opaque backdrop."
+      },
+      {
+        heading: "Results",
+        bullets: [
+          "Real time in a browser: 8.9 ms per frame (112 FPS) at default settings on a workstation-class desktop, scaling linearly in slice count.",
+          "Ablations isolate the contribution of inter-slice coupling and of anisotropic covariance against fair baselines.",
+          "A deterministic-replay harness makes every reported number bit-reproducible."
+        ]
+      }
+    ],
+    gallery: [
+      "fig_scene_occlusion_sorted.jpg",
+      "fig_scene_occlusion_backdrop.jpg",
+      "fig_scene_occlusion_naive.jpg",
+      "fig_couple_full.jpg",
+      "fig_couple_off.jpg",
+      "fig_cov_aniso.jpg",
+      "fig_cov_iso.jpg",
+      "fig_filament.jpg",
+      "fig_parallax_34view.jpg",
+      "fig_smoke_over.jpg",
+      "fig_baseline3d.jpg",
+      "fig_post_bloom.jpg"
+    ].map(f => `https://seanwilliam2077.github.io/VortexGaussians/static/images/${f}`)
+  },
+
   "character-art": {
     title: "Character Art",
     meta: ["Personal Work", "Software: Blender, Substance Painter"],

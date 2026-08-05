@@ -437,6 +437,23 @@ const researchProjects = {
   subtitle: "PHYSICS-GROUNDED 3D GAUSSIAN SPLATTING · FLUID-DRIVEN DYNAMICS",
   projects: [
     {
+      image: require("./assets/images/vortexGaussians.jpg"),
+      projectName: "Vortex Gaussians",
+      projectDesc:
+        "The first system to generate fire and smoke by forward physical simulation in real time and render them as native Gaussian-splatting content. Lagrangian vortex particles and 3D Gaussians are treated as the same point primitive — no voxelization, meshing or simulation-to-renderer conversion — so flames share one depth order and one emission-absorption blend state with a reconstructed 3DGS scene and occlude it correctly. 8.9 ms/frame (112 FPS) in a single-file WebGL2 prototype.",
+      footerLink: [
+        {name: "Read More", url: "#/project/vortex-gaussians"},
+        {
+          name: "Live Demo",
+          url: "https://seanwilliam2077.github.io/VortexGaussians/"
+        },
+        {
+          name: "Code",
+          url: "https://github.com/Seanwilliam2077/VortexGaussians"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/cgai/research.svg").default,
       projectName: "Dynamic Gaussian World",
       projectDesc:
