@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SeanSiu_Portfolio/static/css/main.fcce4772.css",
-    "main.js": "/SeanSiu_Portfolio/static/js/main.60f77172.js",
+    "main.css": "/SeanSiu_Portfolio/static/css/main.8a26ac2e.css",
+    "main.js": "/SeanSiu_Portfolio/static/js/main.60f6245e.js",
     "static/css/64.e3c0ae83.chunk.css": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.2b7d253e.chunk.css": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css",
@@ -38,15 +38,15 @@
     "static/media/unity.svg": "/SeanSiu_Portfolio/static/media/unity.cdb3e59d38daa10895b3600042fcdfdb.svg",
     "static/media/talksCardBack.svg": "/SeanSiu_Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "static/media/pytorch.svg": "/SeanSiu_Portfolio/static/media/pytorch.972a9974aedd5b2ae8418536d635c9d2.svg",
-    "main.fcce4772.css.map": "/SeanSiu_Portfolio/static/css/main.fcce4772.css.map",
-    "main.60f77172.js.map": "/SeanSiu_Portfolio/static/js/main.60f77172.js.map",
+    "main.8a26ac2e.css.map": "/SeanSiu_Portfolio/static/css/main.8a26ac2e.css.map",
+    "main.60f6245e.js.map": "/SeanSiu_Portfolio/static/js/main.60f6245e.js.map",
     "64.e3c0ae83.chunk.css.map": "/SeanSiu_Portfolio/static/css/64.e3c0ae83.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/SeanSiu_Portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.2b7d253e.chunk.css.map": "/SeanSiu_Portfolio/static/css/769.2b7d253e.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/SeanSiu_Portfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcce4772.css",
-    "static/js/main.60f77172.js"
+    "static/css/main.8a26ac2e.css",
+    "static/js/main.60f6245e.js"
   ]
 }
