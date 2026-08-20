@@ -1,6 +1,23 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+# Zijun Xiao — Technical Art & Graphics Portfolio
 
-## A clean, beautiful and responsive portfolio template for Developers!
+[![Launch Portfolio](https://img.shields.io/badge/Launch-Portfolio-55198b?style=for-the-badge&logo=githubpages&logoColor=white)](https://seanwilliam2077.github.io/SeanSiu_Portfolio/)
+[![Explore Skills](https://img.shields.io/badge/Explore-Technical_Skills-2f80ed?style=for-the-badge)](https://seanwilliam2077.github.io/SeanSiu_Portfolio/#skills)
+[![View Repository](https://img.shields.io/badge/View-Source_Code-181717?style=for-the-badge&logo=github)](https://github.com/Seanwilliam2077/SeanSiu_Portfolio)
+
+A portfolio of selected work in real-time rendering, procedural content
+generation, agent automation, neural rendering, DCC pipelines, and game-engine
+R&D.
+
+## Quick links
+
+- [Launch the live portfolio](https://seanwilliam2077.github.io/SeanSiu_Portfolio/)
+- [Jump directly to technical skills](https://seanwilliam2077.github.io/SeanSiu_Portfolio/#skills)
+- [Browse the source repository](https://github.com/Seanwilliam2077/SeanSiu_Portfolio)
+
+## About this project
+
+This site is based on the developerFolio portfolio template and customized for
+Zijun Xiao's technical-art and graphics work.
 
 
 <p align="center">
@@ -10,7 +27,8 @@
 </p>
 
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
+Portfolio content is maintained in `src/portfolio.js`, with the shared color
+scheme in `src/_globalColor.scss`.
 
 If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
 
@@ -44,7 +62,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
+To view this portfolio, **[launch the live demo](https://seanwilliam2077.github.io/SeanSiu_Portfolio/)**.
 
 
 ## Getting Started
@@ -72,10 +90,10 @@ From your command line, clone and run developerFolio:
 
 ```bash
 # Clone this repository
-git clone https://github.com/saadpasta/developerFolio.git
+git clone https://github.com/Seanwilliam2077/SeanSiu_Portfolio.git
 
 # Go into the repository
-cd developerFolio
+cd SeanSiu_Portfolio
 
 # Setup default environment variables
 

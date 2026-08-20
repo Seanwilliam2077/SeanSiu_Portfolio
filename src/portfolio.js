@@ -20,6 +20,8 @@ const greeting = {
     "A Technical Artist, Graphics Engineer and Researcher focused on real-time rendering, PCG and Agent automation, neural rendering, DCC pipelines, and game-engine R&D."
   ),
   resumeLink: "",
+  skillsLink: "#skills",
+  repositoryLink: "https://github.com/Seanwilliam2077/SeanSiu_Portfolio",
   displayGreeting: true
 };
 
